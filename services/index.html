@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <title>Digital Marketing Services | SEO, Websites &amp; Advertising – Digital Vishu Agency</title>
+    <meta name="description" content="Explore Digital Vishu Agency services including SEO, social media marketing, website development, branding, content marketing, Google Ads, analytics, and lead generation.">
+    <link rel="canonical" href="https://www.example.com/services/">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icon-16.png">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+    <link rel="manifest" href="/assets/site.webmanifest">
+    <meta name="theme-color" content="#171717">
+    <meta property="og:title" content="Digital Marketing Services | SEO, Websites &amp; Advertising – Digital Vishu Agency">
+    <meta property="og:description" content="Explore Digital Vishu Agency services including SEO, social media marketing, website development, branding, content marketing, Google Ads, analytics, and lead generation.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.example.com/services/">
+    <meta property="og:image" content="https://www.example.com/assets/logo.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","name":"Digital Vishu Agency","url":"https://www.example.com/","logo":"https://www.example.com/assets/logo.png","founder":{"@id":"https://www.example.com/#vishal"},"address":{"@type":"PostalAddress","addressLocality":"Kotdwara","addressRegion":"Uttarakhand","addressCountry":"IN"},"sameAs":["https://youtube.com/@vishu-paradise","https://www.instagram.com/vishu.paradise/","https://www.linkedin.com/in/vishal-thapa-94765a428"]},{"@type":"Person","@id":"https://www.example.com/#vishal","name":"Vishal Thapa","jobTitle":"Founder & Digital Marketer","worksFor":{"@type":"Organization","name":"Digital Vishu Agency"}}]}</script>
+
+  <!-- STYLES: shared sections 01–15 + services extras -->
+  <style>
+/* ==========================================================================
+   DIGITAL VISHU AGENCY — SHARED STYLES (used by every page)
+   Sections: 01 Variables · 02 Base · 03 Buttons · 04 Header · 05 Hero
+             06 Cards (What We Do / Services / Blog) · 07 About · 08 Portfolio
+             09 Case Studies · 10 Games · 11 Process · 12 Final CTA
+             13 Footer · 14 Animations · 15 Accessibility
+   ========================================================================== */
+
+/* ---------- 01. VARIABLES (Golden Hour palette) ---------- */
+:root{
+  --amber:#FFBF00; --gold:#CFB53B; --lav:#E0B0FF; --cream:#F0EFD0;
+  --ch:#171717;    --ch2:#232323;
+  color-scheme:dark; box-sizing:border-box;
+}
+
+/* ---------- 02. BASE ---------- */
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:110px}
+body{margin:0;background:var(--ch);color:var(--cream);font:16px/1.65 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;overflow-x:hidden;animation:pageIn .7s both}
+body.out{opacity:0;transition:opacity .2s}
+h1,h2,h3{font-family:"Playfair Display",Georgia,serif;line-height:1.12;margin:0 0 .5em;font-weight:700}
+h1{font-size:clamp(2.3rem,7vw,4.8rem)} h2{font-size:clamp(1.8rem,4.4vw,2.9rem)} h3{font-size:1.25rem}
+a{color:inherit;text-decoration:none} img{max-width:100%;height:auto}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+section{padding:88px 0}
+.alt{background:var(--ch2)}
+.eyebrow{display:inline-block;font-size:.74rem;letter-spacing:.18em;font-weight:700;color:var(--ch);background:var(--amber);padding:6px 14px;border-radius:99px;margin-bottom:18px}
+.lead{max-width:650px;opacity:.82}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.grid{display:grid;gap:22px;margin-top:42px;grid-template-columns:repeat(auto-fit,minmax(265px,1fr))}
+@media(max-width:800px){.split{grid-template-columns:1fr}}
+
+/* ---------- 03. BUTTONS ---------- */
+.btn{display:inline-block;padding:13px 28px;border-radius:99px;font:700 1rem inherit;font-family:inherit;border:2px solid var(--amber);background:var(--amber);color:var(--ch);cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s,color .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(255,191,0,.3)}
+.btn:active{transform:scale(.97)}
+.btn.ghost{background:transparent;color:var(--cream)}
+.btn.ghost:hover{background:var(--cream);color:var(--ch);border-color:var(--cream)}
+.btns{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+
+/* ---------- 04. HEADER & NAVIGATION ---------- */
+header{position:fixed;inset:0 0 auto 0;z-index:50;background:rgba(23,23,23,.96);backdrop-filter:blur(10px);border-bottom:1px solid #2e2e2e;padding-top:env(safe-area-inset-top,0)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;height:92px}
+/* logo (transparent PNG, shown directly on dark header) */
+.logo{display:block;flex:none}
+.logo img{display:block;height:68px;width:auto;aspect-ratio:768/488;object-fit:contain}
+/* links */
+nav{flex:1}
+nav ul{list-style:none;margin:0;padding:0;display:flex;justify-content:center;gap:24px;align-items:center}
+nav a.l{position:relative;font-size:.92rem;padding:6px 0;transition:color .2s}
+nav a.l::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--amber);transition:width .3s}
+nav a.l:hover,nav a.l[aria-current]{color:var(--amber)}
+nav a.l:hover::after,nav a.l[aria-current]::after{width:100%}
+.nav .btn{padding:10px 22px;flex:none}
+/* Games dropdown */
+.dd{position:relative;padding:10px 0}
+.dd .m{position:absolute;top:100%;left:-14px;min-width:230px;background:var(--ch2);border:1px solid #3a3a3a;border-radius:14px;padding:8px;opacity:0;visibility:hidden;transform:translateY(10px);transition:.25s}
+.dd:hover .m,.dd:focus-within .m{opacity:1;visibility:visible;transform:none}
+.m a{display:block;padding:9px 12px;border-radius:8px;font-size:.9rem}
+.m a:hover{background:#333;color:var(--amber)}
+/* hamburger */
+.burger{display:none;background:none;border:0;color:var(--cream);width:46px;height:46px;cursor:pointer;position:relative;z-index:60}
+.burger span{display:block;height:2px;background:currentColor;margin:6px 11px;transition:.3s}
+.burger.o span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+.burger.o span:nth-child(2){opacity:0}
+.burger.o span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+.mq{display:none}
+/* mobile / tablet menu */
+@media(max-width:1060px){
+  .burger{display:block} .nav>.btn{display:none} .nav{height:80px} .logo img{height:56px}
+  nav{position:fixed;top:0;right:0;bottom:0;width:min(88vw,340px);flex:none;background:var(--ch);border-left:1px solid #333;padding:96px 26px 30px;transform:translateX(105%);transition:transform .4s;overflow-y:auto}
+  nav.o{transform:none}
+  nav ul{flex-direction:column;align-items:flex-start;gap:14px}
+  .dd .m{position:static;opacity:1;visibility:visible;transform:none;background:none;border:0;padding:2px 0 0 12px}
+  .mq{display:block;margin-top:24px}
+  .mq img{width:160px;height:auto;aspect-ratio:768/488;display:block;margin-bottom:16px}
+}
+
+/* ---------- 05. HERO ---------- */
+.hero{min-height:100svh;display:flex;align-items:center;position:relative;overflow:hidden;padding:130px 0 80px}
+.hero .wrap{position:relative;z-index:2}
+.hero em{font-style:normal;color:var(--amber)}
+.hero p{max-width:560px;font-size:1.1rem;opacity:.85}
+.orb{position:absolute;border-radius:50%;animation:float 9s ease-in-out infinite}
+.o1{width:420px;height:420px;right:-80px;top:14%;background:radial-gradient(circle at 30% 30%,var(--amber),var(--gold) 55%,#6b5a10)}
+.o2{width:170px;height:170px;right:26%;bottom:10%;background:radial-gradient(circle at 30% 30%,#fff4,var(--lav));animation-delay:-3s}
+.o3{width:90px;height:90px;right:8%;bottom:24%;border:3px solid var(--gold);animation-delay:-6s}
+.cube{position:absolute;width:110px;height:110px;right:38%;top:18%;border:2px solid var(--lav);border-radius:24px;transform:rotate(18deg);animation:float 11s ease-in-out infinite;opacity:.6}
+@media(max-width:700px){.o1{width:250px;height:250px;opacity:.4}.cube{display:none}}
+
+/* ---------- 06. CARDS (What We Do · Services · Why Choose Us · Blog) ---------- */
+.card{background:var(--ch2);border:1px solid #3a3a3a;border-radius:22px;padding:30px;transition:transform .3s,box-shadow .3s,border-color .3s}
+.alt .card{background:var(--ch)}
+.card:hover{transform:translateY(-8px);box-shadow:0 18px 40px rgba(0,0,0,.4);border-color:var(--amber)}
+.card p{opacity:.85}
+.ic{width:52px;height:52px;border-radius:15px;background:var(--amber);display:grid;place-items:center;font-size:1.5rem;margin-bottom:18px;transition:transform .4s}
+.card:hover .ic{transform:rotate(-8deg) scale(1.1)}
+.more{display:inline-block;margin-top:14px;font-weight:700;color:var(--amber);transition:padding .25s}
+.card:hover .more{padding-left:8px}
+.more:hover{text-decoration:underline}
+.bl .bg{aspect-ratio:16/9;border-radius:14px;margin-bottom:16px}
+
+/* ---------- 07. ABOUT ---------- */
+.ph{aspect-ratio:4/5;border-radius:26px;background:linear-gradient(160deg,#2a2a2a,#3a2f00);display:grid;place-items:center;text-align:center;padding:20px;border:2px dashed var(--gold)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}
+.tags span{border:1px solid var(--gold);padding:5px 14px;border-radius:99px;font-size:.85rem}
+
+/* ---------- 08. PORTFOLIO ---------- */
+.pj{position:relative;border-radius:22px;overflow:hidden;aspect-ratio:4/3;color:var(--cream);display:block}
+.pj .bg{position:absolute;inset:0;transition:transform .6s}
+.pj:hover .bg{transform:scale(1.1)}
+.pj .ov{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:22px;background:linear-gradient(transparent 35%,rgba(23,23,23,.9))}
+.pj small{color:var(--amber);font-weight:700;letter-spacing:.1em}
+.demo{font-size:.78rem;opacity:.75}
+
+/* ---------- 09. CASE STUDIES ---------- */
+.cimg{aspect-ratio:16/9;border-radius:14px;margin-bottom:16px;background:linear-gradient(135deg,var(--gold),var(--lav));transition:transform .5s}
+.card:hover .cimg{transform:scale(1.03)}
+.grid>.card:nth-child(2) .cimg{background:linear-gradient(135deg,var(--lav),var(--amber))}
+.grid>.card:nth-child(3) .cimg{background:linear-gradient(135deg,var(--amber),#6b5a10)}
+
+/* ---------- 10. GAMES / DIGITAL VISHU ACADEMY ---------- */
+/* uses .split + .ph from sections 02 and 07 */
+
+/* ---------- 11. PROCESS — FROM VISION TO GROWTH ---------- */
+.proc{--p:0;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:56px;position:relative}
+.line{position:absolute;top:29px;left:12.5%;right:12.5%;height:3px;background:#3a3a3a;border-radius:3px}
+.line::after{content:"";position:absolute;right:-7px;top:-5px;width:13px;height:13px;border-radius:50%;background:var(--lav);box-shadow:0 0 12px var(--lav)}   /* lavender end accent */
+.fill{display:block;height:100%;width:calc(var(--p)*100%);background:linear-gradient(90deg,var(--gold),var(--amber));box-shadow:0 0 12px var(--amber);border-radius:3px;transition:width 1.4s cubic-bezier(.4,0,.2,1)}
+.st{position:relative;text-align:center;opacity:.6;transition:opacity .6s,color .6s}
+.st b{display:grid;place-items:center;width:58px;height:58px;margin:0 auto 16px;border-radius:50%;border:2px solid var(--amber);background:rgba(255,191,0,.16);color:var(--amber);font-size:1.05rem;position:relative;z-index:1;transition:.6s}
+.st h3{margin-bottom:6px}
+.st.on{opacity:1;color:#fff9dd}
+.st.on b{background:var(--amber);color:var(--ch);box-shadow:0 0 28px rgba(255,191,0,.65);transform:scale(1.12)}
+.proc.static .st{opacity:1} .proc.static{--p:1}
+@media(max-width:700px){   /* vertical timeline on mobile */
+  .proc{grid-template-columns:1fr;gap:34px}
+  .line{top:29px;bottom:29px;left:28px;right:auto;width:3px;height:auto}
+  .line::after{right:auto;left:-5px;top:auto;bottom:-7px}
+  .fill{width:100%;height:calc(var(--p)*100%);transition:height 1.4s cubic-bezier(.4,0,.2,1)}
+  .st{text-align:left;padding-left:80px}
+  .st b{position:absolute;left:0;top:0;margin:0}
+}
+
+/* ---------- 12. FINAL CTA ---------- */
+.cta2{background:var(--ch);text-align:center;position:relative;overflow:hidden;border-top:1px solid #2e2e2e}
+.cta2 .wrap{position:relative;z-index:1}
+.cta2 p{max-width:560px;margin:0 auto;opacity:.85}
+.cta2::before,.cta2::after{content:"";position:absolute;border-radius:50%;animation:float 10s ease-in-out infinite}
+.cta2::before{width:260px;height:260px;left:-80px;top:-60px;background:radial-gradient(circle at 30% 30%,var(--amber),var(--gold) 60%,transparent 62%);opacity:.5}
+.cta2::after{width:200px;height:200px;right:-50px;bottom:-60px;background:radial-gradient(circle at 30% 30%,#fff4,var(--lav));opacity:.45;animation-delay:-4s}
+
+/* ---------- 13. FOOTER ---------- */
+footer{background:#101010;padding:70px 0 30px;border-top:1px solid #2e2e2e}
+.fg{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:36px}
+footer .fg>div:first-child>a{display:inline-block;margin-bottom:12px}
+footer img{width:200px;height:auto;aspect-ratio:768/488;object-fit:contain;display:block}
+footer h3{font-size:1rem;color:var(--amber);font-family:inherit}
+footer ul{list-style:none;padding:0;margin:0}
+footer li{margin:7px 0;font-size:.92rem;opacity:.85}
+footer li a:hover{color:var(--amber)}
+.soc{display:flex;gap:10px;margin-top:14px}
+.soc a{width:40px;height:40px;display:grid;place-items:center;border-radius:50%;border:1px solid #555;transition:.25s}
+.soc a:hover{background:var(--amber);color:var(--ch);border-color:var(--amber);transform:translateY(-3px)}
+.soc svg{width:18px;height:18px;fill:currentColor}
+.bot{border-top:1px solid #2e2e2e;margin-top:40px;padding-top:20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.85rem;opacity:.8}
+@media(max-width:800px){.fg{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.fg{grid-template-columns:1fr}}
+
+/* ---------- 14. ANIMATIONS ---------- */
+@keyframes pageIn{from{opacity:0;transform:translateY(8px)}}
+@keyframes float{50%{transform:translateY(-24px) rotate(8deg)}}
+.rv{opacity:0;transform:translateY(28px);transition:opacity .8s,transform .8s;transition-delay:var(--d,0s)}   /* scroll reveal */
+.rv.in{opacity:1;transform:none}
+
+/* ---------- 15. ACCESSIBILITY ---------- */
+a:focus-visible,button:focus-visible{outline:3px solid var(--lav);outline-offset:3px}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .rv{opacity:1;transform:none} html{scroll-behavior:auto}
+}
+
+/* ---------- A. HERO (shorter, word-by-word heading reveal, golden glow) ---------- */
+.hero.short{min-height:84svh}
+.hero .w{display:inline-block;opacity:0;transform:translateY(45%);animation:wordIn .8s cubic-bezier(.2,.7,.2,1) forwards;animation-delay:calc(var(--i)*.09s + .2s)}
+@keyframes wordIn{to{opacity:1;transform:none}}
+.glow{position:absolute;width:60vw;height:60vw;max-width:700px;max-height:700px;left:-15%;bottom:-30%;background:radial-gradient(circle,rgba(255,191,0,.18),transparent 65%);animation:float 14s ease-in-out infinite}
+
+
+/* ==========================================================================
+   SERVICES PAGE — EXTRA STYLES
+   Hero extras (from About) · Category index · Category sections · Service cards
+   · Animated illustrations (one keyframe per service type: a-scan, a-mag, a-gr …)
+   ========================================================================== */
+
+.catnav{display:flex;flex-wrap:wrap;gap:10px;padding-top:26px;padding-bottom:26px}
+.catnav a{border:1px solid #3a3a3a;border-radius:99px;padding:7px 16px;font-size:.85rem;transition:.25s}.catnav a:hover{border-color:var(--amber);color:var(--amber);transform:translateY(-2px)}
+.cat{position:relative;overflow:hidden}.cat .eyebrow{background:var(--acc)}.cat .wrap{position:relative}
+.bn{position:absolute;right:20px;top:-30px;font:700 clamp(6rem,18vw,13rem)/1 "Playfair Display",Georgia,serif;color:transparent;-webkit-text-stroke:1px var(--acc);opacity:.18;pointer-events:none}
+.svc{padding:0;overflow:hidden;display:flex;flex-direction:column;position:relative}
+.svc::after{content:"";position:absolute;left:0;bottom:0;height:3px;width:0;background:var(--acc);transition:width .5s}.svc:hover::after{width:100%}
+.svc:hover{border-color:var(--acc)}
+.art{height:110px;background:#121212;border-bottom:1px solid #333;position:relative;overflow:hidden}.art.big{height:150px}
+.art svg{width:100%;height:100%;display:block}
+.sb{padding:24px 26px 26px;display:flex;flex-direction:column;flex:1}.sb h3{font-size:1.15rem}.sb p{margin:0 0 auto;font-size:.95rem}
+.dv{height:1px;background:#3a3a3a;margin:18px 0 14px}
+.enq{font-weight:700;color:var(--acc);display:inline-flex;gap:6px;align-items:center;min-height:44px}.enq span{transition:transform .25s}.enq:hover span{transform:translateX(6px)}.enq:hover{text-decoration:underline}
+.svc:not(.in) .art svg *{animation-play-state:paused}
+.grid.big{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.grid.span-last>.svc:last-child{grid-column:1/-1}
+@media(min-width:900px){.grid.span-last>.svc:last-child{flex-direction:row}.grid.span-last>.svc:last-child .art{width:340px;height:auto;border-bottom:0;border-right:1px solid #333}.grid.span-last>.svc:last-child .sb{justify-content:center}
+.grid.feat>.svc{flex-direction:row;grid-column:1/-1}.grid.feat .art{width:48%;height:auto;min-height:260px;border-bottom:0;border-right:1px solid #333}.grid.feat .sb{justify-content:center;padding:40px}.grid.feat h3{font-size:1.8rem}.grid.feat p{font-size:1.05rem;margin-bottom:24px}}
+.grid.feat .art.big{height:220px}
+:where(.art svg *){transform-box:fill-box}
+.art .m{fill:#4a4a4a}.art .ml{stroke:#4a4a4a;fill:none;stroke-width:2}.art .ac{fill:var(--acc)}.art .as{stroke:var(--acc);fill:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+.art svg .a-or{transform-box:view-box;transform-origin:100px 48px}
+.a-scan{animation:ksc 2.6s ease-in-out infinite alternate}@keyframes ksc{from{transform:translateY(0)}to{transform:translateY(56px)}}
+.a-mag{animation:kmag 3s ease-in-out infinite}@keyframes kmag{0%,100%{transform:translateX(-26px)}50%{transform:translateX(26px) rotate(8deg)}}
+.a-gr{transform-origin:0 50%;animation:kgr 3.4s ease-in-out infinite;animation-delay:var(--d,0s)}@keyframes kgr{0%{transform:scaleX(0)}40%,80%{transform:scaleX(1)}100%{transform:scaleX(0)}}
+.a-pu{animation:kpu 2s ease-in-out infinite}@keyframes kpu{50%{transform:scale(1.3)}}
+.a-ring{animation:kring 2s ease-out infinite}@keyframes kring{0%{transform:scale(.3);opacity:.9}100%{transform:scale(1.5);opacity:0}}
+.a-bn{animation:kbn 1.6s ease-in-out infinite}@keyframes kbn{50%{transform:translateY(-8px)}}
+.a-cr{animation:kbl 1s steps(2) infinite}@keyframes kbl{50%{opacity:0}}
+.a-fr{animation:kfr 3.2s ease-in-out infinite}@keyframes kfr{0%{transform:scale(.5);opacity:0}30%,80%{transform:scale(1);opacity:1}100%{opacity:0}}
+.a-sl{animation:ksl 3s ease-in-out infinite alternate}@keyframes ksl{from{transform:translateX(-12px)}to{transform:translateX(12px)}}
+.a-dr{stroke-dasharray:400;animation:kdr 3.4s ease-in-out infinite}@keyframes kdr{0%{stroke-dashoffset:400}60%,100%{stroke-dashoffset:0}}
+.a-or{animation:kor 4s linear infinite}@keyframes kor{to{transform:rotate(360deg)}}
+.a-fu{animation:kfu 4s ease-in infinite}@keyframes kfu{0%{transform:translateY(24px);opacity:0}30%{opacity:1}100%{transform:translateY(-30px);opacity:0}}
+.a-fi{animation:kfi 3.2s ease-in-out infinite}@keyframes kfi{0%{opacity:0;transform:translateY(8px)}25%,85%{opacity:1;transform:none}100%{opacity:0}}
+.a-tx{animation:ktx 3.2s ease-in-out infinite}@keyframes ktx{0%{transform:translateX(-20px);opacity:0}30%,85%{transform:none;opacity:1}100%{opacity:0}}
+.a-fl{transform-origin:50% 0;animation:kfl 3s ease-in-out infinite}@keyframes kfl{0%,100%{transform:scaleY(1)}50%{transform:scaleY(-1)}}
+.a-rs{transform-origin:50% 100%;animation:krs 3s ease-in-out infinite}@keyframes krs{0%{transform:scaleY(.1)}40%,85%{transform:scaleY(1)}100%{transform:scaleY(.1)}}
+.a-fa{animation:kfa 2.4s ease-in infinite}@keyframes kfa{0%{transform:translateY(0);opacity:0}20%{opacity:1}100%{transform:translateY(46px) scale(.4);opacity:0}}
+.a-tr{animation:ktr 2.4s ease-in-out infinite}@keyframes ktr{50%{transform:translate(var(--tx,60px),0)}}
+@media(prefers-reduced-motion:reduce){.art svg *{animation:none!important}}
+</style>
+</head>
+<body>
+
+<!-- ================================================================
+     01. HEADER & NAVIGATION  — "Services" is the active item
+     ================================================================ -->
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="/" aria-label="Digital Vishu Agency – Home"><img src="favicon.png" width="101" height="64" alt="Digital Vishu Agency official logo"></a>
+    <nav id="nav" aria-label="Main">
+      <ul>
+        <li><a class="l" href="/">Home</a></li>
+        <li><a class="l" href="/about/">About Us</a></li>
+        <li><a class="l" href="/services/" aria-current="page">Services</a></li>
+        <li><a class="l" href="/portfolio/">Portfolio</a></li>
+        <li><a class="l" href="/case-studies/">Case Studies</a></li>
+        <li><a class="l" href="/blog/">Blog</a></li>
+        <li class="dd"><a class="l" href="/games/">Games ▾</a>
+        <div class="m">
+          <a href="/games/academy/">Digital Vishu Academy</a><a href="/games/the-business-life/">The Business Life</a><a href="/games/upcoming/">Upcoming Games</a>
+        </div>
+        </li>
+        <li><a class="l" href="/contact/">Contact Us</a></li>
+      </ul>
+      <div class="mq">
+        <a href="/" aria-label="Digital Vishu Agency – Home"><img src="favicon.png" width="150" height="95" alt="Digital Vishu Agency official logo"></a><a class="btn" href="/get-a-quote/">Get a Quote</a>
+      </div>
+    </nav>
+    <a class="btn" href="/get-a-quote/">Get a Quote</a><button class="burger" id="bg" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+
+<!-- ================================================================
+     02. HERO — WHAT WE DO
+     ================================================================ -->
+    <section class="hero short">
+      <div class="orb o1">
+      </div>
+      <div class="orb o2">
+      </div>
+      <div class="orb o3">
+      </div>
+      <div class="cube">
+      </div>
+      <div class="glow" aria-hidden="true">
+      </div>
+      <div class="wrap">
+        <span class="eyebrow rv">WHAT WE DO</span>
+        <h1><span class="w" style="--i:0">Digital</span><span class="w" style="--i:1">Solutions.</span><span class="w" style="--i:2">Creative</span><span class="w" style="--i:3">Strategies.</span><em><span class="w" style="--i:5">Real</span><span class="w" style="--i:6">Growth.</span></em></h1>
+        <p class="rv" style="--d:1s;max-width:640px;font-size:1.1rem;opacity:.85">From search engine optimization and social media marketing to website development and paid advertising, we provide creative digital solutions designed to help businesses strengthen their online presence.</p>
+        <div class="btns rv" style="--d:1.2s">
+          <a class="btn" href="#seo">Explore Our Services</a><a class="btn ghost" href="/get-a-quote/">Get a Quote</a>
+        </div>
+      </div>
+    </section>
+
+<!-- ================================================================
+     03. CATEGORY QUICK LINKS (anchor pills)
+     ================================================================ -->
+    <nav class="wrap catnav" aria-label="Service categories">
+      <a href="#seo">01 SEO</a><a href="#ads">02 Paid Ads</a><a href="#social">03 Social Media</a><a href="#web">04 Web</a><a href="#content">05 Content</a><a href="#analytics">06 Analytics</a><a href="#lead">07 Lead Gen</a>
+    </nav>
+
+<!-- ================================================================
+     04. CATEGORY 01 — SEO (6 services)
+     ================================================================ -->
+    <section id="seo" class="cat" style="--acc:#FFBF00">
+      <div class="wrap">
+        <span class="bn" aria-hidden="true">01</span><span class="eyebrow rv">01 / SEARCH ENGINE OPTIMIZATION</span>
+        <h2 class="rv">Get Found. Get Discovered. Grow Organically.</h2>
+        <p class="lead rv">Improve your search visibility, attract relevant visitors, and build a stronger organic presence with strategic SEO solutions.</p>
+        <div class="grid ">
+          <article class="card svc rv" style="--d:0.0s">
+            <div class="art">
+              <svg viewBox="0 0 200 96" role="img" aria-label="SEO Audit animated illustration"><rect class="m" x="40" y="14" width="120" height="6" rx="3"/><rect class="m" x="40" y="30" width="90" height="6" rx="3"/><rect class="m" x="40" y="46" width="110" height="6" rx="3"/><rect class="m" x="40" y="62" width="70" height="6" rx="3"/><rect class="ac a-scan" opacity=".35" x="30" y="10" width="140" height="14" rx="4"/></svg>
+            </div>
+            <div class="sb">
+              <h3>SEO Audit</h3>
+              <p>A review of how your website is set up for search, with the main issues and opportunities listed.</p>
+              <div class="dv">
+              </div>
+              <a class="enq" href="/get-a-quote/?service=SEO%20Audit" aria-label="Enquire now about SEO Audit">Enquire Now <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          <article class="card svc rv" style="--d:0.1s">
+            <div class="art">
+              <svg viewBox="0 0 200 96" role="img" aria-label="Keyword Research animated illustration"><g class="a-mag"><circle class="as" cx="92" cy="42" r="16"/><path class="as" d="M104 54l16 16"/></g><rect class="m" x="30" y="80" width="140" height="4" rx="2"/></svg>
+            </div>
+            <div class="sb">
+              <h3>Keyword Research</h3>
+              <p>Find the search terms your customers use so your pages can target them.</p>
+              <div class="dv">
+              </div>
+              <a class="enq" href="/get-a-quote/?service=Keyword%20Research" aria-label="Enquire now about Keyword Research">Enquire Now <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          <article class="card svc rv" style="--d:0.2s">
+            <div class="art">
+              <svg viewBox="0 0 200 96" role="img" aria-label="On-page SEO animated illustration"><rect class="ac a-gr" style="--d:0s" x="30" y="16" width="100" height="10" rx="5"/><rect class="m a-gr" style="--d:0.3s" x="30" y="36" width="140" height="6" rx="3"/><rect class="m a-gr" style="--d:0.6s" x="30" y="50" width="120" height="6" rx="3"/><rect class="m a-gr" style="--d:0.9s" x="30" y="64" width="130" height="6" rx="3"/></svg>
+            </div>
+            <div class="sb">
+              <h3>On-page SEO</h3>
+              <p>Improve titles, headings, content, and page structure so search engines understand your pages.</p>
+              <div class="dv">
+              </div>
+              <a class="enq" href="/get-a-quote/?service=On-page%20SEO" aria-label="Enquire now about On-page SEO">Enquire Now <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          <article class="card svc rv" style="--d:0.0s">
+            <div class="art">
+              <svg viewBox="0 0 200 96" role="img" aria-label="Off-page SEO animated illustration"><path class="ml" d="M50 50L100 24L150 50L100 76Z M100 24V76"/><circle class="ac a-pu" style="animation-delay:0s" cx="50" cy="50" r="7"/><circle class="ac a-pu" style="animation-delay:0.4s" cx="100" cy="24" r="7"/><circle class="ac a-pu" style="animation-delay:0.8s" cx="150" cy="50" r="7"/><circle class="ac a-pu" style="animation-delay:1.2s" cx="100" cy="76" r="7"/></svg>
+            </div>
+            <div class="sb">
+              <h3>Off-page SEO</h3>
+              <p>Build your site's visibility and authority through relevant activity outside your own website.</p>
+              <div class="dv">
+              </div>
+              <a class="enq" href="/get-a-quote/?service=Off-page%20SEO" aria-label="Enquire now about Off-page SEO">Enquire Now <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          <article class="card svc rv" style="--d:0.1s">
+            <div class="art">
+              <svg viewBox="0 0 200 96" role="img" aria-label="Local SEO animated illustration"><circle class="as a-ring" cx="100" cy="72" r="16" stroke-width="2"/><path class="ac a-bn" fill-rule="evenodd" d="M100 14c-12 0-20 9-20 20 0 15 20 38 20 38s20-23 20-38c0-11-8-20-20-20zm0 28a8 8 0 110-16 8 8 0 010 16z"/></svg>
+            </div>
+            <div class="sb">
+              <h3>Local SEO</h3>
+              <p>Help nearby customers find your business in local search results.</p>
+              <div class="dv">
+              </div>
+              <a class="enq" href="/get-a-quote/?service=Local%20SEO" aria-label="Enquire now about Local SEO">Enquire Now <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          <article class="card svc rv" style="--d:0.2s">
+            <div class="art">
+              <svg viewBox="0 0 200 96" role="img" aria-label="Google Business Profile Setup and Optimization animated illustration"><path class="ml" d="M20 28H180M20 52H180M20 76H180M60 10V90M110 10V90M150 10V90"/><path class="as a-dr" d="M30 80C60 80 70 52 110 52S160 30 170 24" stroke-width="3"/><circle class="ac a-bn" cx="170" cy="22" r="8"/></svg>
+            </div>
+            <div class="sb">
+              <h3>Google Business Profile Setup and Optimization</h3>
+              <p>Set up and improve your Google Business Profile so your business is easier to find and understand.</p>
+              <div class="dv">
+              </div>
+              <a class="enq" href="/get-a-quote/?service=Google%20Business%20Profile%20Setup%20and%20Optimization" aria-label="Enquire now about Google Business Profile Setup and Optimization">Enquire Now <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+<!-- ================================================================
+     05. CATEGORY 02 — GOOGLE ADS & PAID ADVERTISING (7 services)
+     ================================================================ -->
+    <section id="ads" class="cat alt" style="--acc:#E0B0FF">
+      <div class="wrap">
+        <span class="bn" aria-hidden="true">02</span><span class="eyebrow rv">02 / PAID ADVERTISING</span>
+        <h2 class="rv">Reach the Right Audience. Make Every Click Count.</h2>
+        <p class="lead rv">Plan, launch, and optimize digital advertising campaigns to connect your business with relevant customers.</p>
+        <div class="grid span-last">
+          <article class="card svc rv" style="--d:0.0s">
+            <div class="art">
+              <svg viewBox="0 0 200 96" role="img" aria-label="Google Ads Management animated illustration"><rect class="m" x="25" y="22" width="150" height="8" rx="4"/><rect class="ac a-gr" style="--d:0s" x="25" y="22" width="110" height="8" rx="4"/><rect class="m" x="25" y="44" width="150" height="8" rx="4"/><rect class="ac a-gr" style="--d:0.4s" x="25" y="44" width="80" height="8" rx="4"/><rect class="m" x="25" y="66" width="150" height="8" rx="4"/><rect class="ac a-gr" style="--d:0.8s" x="25" y="66" width="130" height="8" rx="4"/></svg>
+            </div>
+            <div class="sb">
+              <h3>Google Ads Management</h3>
+              <p>Planning, running, and refining Google Ads campaigns toward your goals.</p>
+              <div class="dv">
+              </div>
+              <a class="enq" href="/get-a-quote/?service=Google%20Ads%20Management" aria-label="Enquire now about Google Ads Management">Enquire Now <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          <article class="card svc rv" style="--d:0.1s">
+            <div class="art">
+              <svg viewBox="0 0 200 96" role="img" aria-label="Google Search Ads animated illustration"><rect class="ml" x="24" y="16" width="152" height="26" rx="13"/><circle class="as" cx="42" cy="29" r="5" stroke-width="2"/><rect class="ac a-gr" style="--d:0s" x="56" y="26" width="60" height="6" rx="3"/><rect class="ac a-cr" x="120" y="24" width="2" height="10"/><rect class="ac" opacity=".3" x="24" y="52" width="152" height="12" rx="4"/><rect class="m" x="24" y="72" width="110" height="8" rx="4"/></svg>
+            </div>
+            <div class="sb">
+              <h3>Google Search Ads</h3>
+              <p>Text ads that appear when people search for what you offer.</p>
+              <div class="dv">
+              </div>
+              <a class="enq" href="/get-a-quote/?service=Google%20Search%20Ads" aria-label="Enquire now about Google Search Ads">Enquire Now <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          <article class="card svc rv" style="--d:0.2s">
+            <div class="art">
+              <svg viewBox="0 0 200 96" role="img" aria-label="Google Display Ads animated illustration"><rect class="as a-fr" x="50" y="14" width="100" height="68" rx="8" stroke-width="3"/><rect class="ac a-fr" style="animation-delay:.3s" opacity=".4" x="62" y="26" width="76" height="44" rx="4"/></svg>
+            </div>
+            <div class="sb">
+              <h3>Google Display Ads</h3>
+              <p>Visual ads shown across websites and apps to build awareness.</p>
+              <div class="dv">
+              </div>
+              <a class="enq" href="/get-a-quote/?service=Google%20Display%20Ads" aria-label="Enquire now about Google Display Ads">Enquire Now <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          <article class="card svc rv" style="--d:0.0s">
+            <div class="art">
+              <svg viewBox="0 0 200 96" role="img" aria-label="YouTube Ads animated illustration"><circle class="as a-ring" cx="100" cy="48" r="28" stroke-width="2"/><circle class="ac" cx="100" cy="48" r="22"/><path d="M93 37l20 11-20 11z" fill="#171717"/></svg>
+            </div>
+            <div class="sb">
+              <h3>YouTube Ads</h3>
+              <p>Video ads that put your message in front of YouTube viewers.</p>
+              <div class="dv">
+              </div>
+              <a class="enq" href="/get-a-quote/?service=YouTube%20Ads" aria-label="Enquire now about YouTube Ads">Enquire Now <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          <article class="card svc rv" style="--d:0.1s">
+            <div class="art">
+              <svg viewBox="0 0 200 96" role="img" aria-label="Google Shopping Ads animated illustration"><g class="a-sl" style="animation-direction:alternate"><rect class="m" x="40" y="22" width="52" height="52" rx="8"/><rect class="ac" opacity=".5" x="48" y="30" width="36" height="24" rx="4"/><rect class="ac" x="48" y="60" width="24" height="6" rx="3"/></g><g class="a-sl" style="animation-direction:alternate-reverse"><rect class="m" x="108" y="22" width="52" height="52" rx="8"/><rect class="ac" opacity=".5" x="116" y="30" width="36" height="24" rx="4"/><rect class="ac" x="116" y="60" width="24" height="6" rx="3"/></g></svg>
+            </div>
+            <div class="sb">
+              <h3>Google Shopping Ads</h3>
+              <p>Product listings for online stores, showing the images and details in Google.</p>
+              <div class="dv">
+              </div>
+              <a class="enq" href="/get-a-quote/?service=Google%20Shopping%20Ads" aria-label="Enquire now about Google Shopping Ads">Enquire Now <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          <article class="card svc rv" style="--d:0.2s">
+            <div class="art">
+              <svg viewBox="0 0 200 96" role="img" aria-label="PPC Campaign Setup and Optimization animated illustration"><path class="ml" d="M20 76H180M20 52H180M20 28H180"/><path class="as a-dr" d="M20 78L56 60L92 66L128 36L180 18"/><circle class="ac a-pu" cx="180" cy="18" r="5"/></svg>
+            </div>
+            <div class="sb">
+              <h3>PPC Campaign Setup and Optimization</h3>
+              <p>Set up pay-per-click campaigns and adjust them to improve performance.</p>
+              <div class="dv">
+              </div>
+              <a class="enq" href="/get-a-quote/?service=PPC%20Campaign%20Setup%20and%20Optimization" aria-label="Enquire now about PPC Campaign Setup and Optimization">Enquire Now <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          <article class="card svc rv" style="--d:0.0s">
+            <div class="art">
+              <svg viewBox="0 0 200 96" role="img" aria-label="Meta Ads for Facebook and Instagram animated illustration"><circle class="ml" cx="100" cy="48" r="30"/><circle class="ac a-pu" cx="100" cy="48" r="12"/><g class="a-or"><circle class="ac" cx="130" cy="48" r="6"/></g><g class="a-or" style="animation-duration:6s;animation-direction:reverse"><circle fill="#E0B0FF" cx="100" cy="18" r="5"/></g></svg>
+            </div>
+            <div class="sb">
+              <h3>Meta Ads for Facebook and Instagram</h3>
+              <p>Paid campaigns on Facebook and Instagram aimed at the right audience.</p>
+              <div class="dv">
+              </div>
+              <a class="enq" href="/get-a-quote/?service=Meta%20Ads%20for%20Facebook%20and%20Instagram" aria-label="Enquire now about Meta Ads for Facebook and Instagram">Enquire Now <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+<!-- ================================================================
+     06. CATEGORY 03 — SOCIAL MEDIA MARKETING (1 service)
+     ================================================================ -->
+    <section id="social" class="cat" style="--acc:#FFBF00">
+      <span id="social-media"></span>
+      <div class="wrap">
+        <span class="bn" aria-hidden="true">03</span><span class="eyebrow rv">03 / SOCIAL MEDIA</span>
+        <h2 class="rv">Build Your Presence. Create Connections.</h2>
+        <p class="lead rv">Create meaningful social media content and campaigns that help your brand connect with its audience.</p>
+        <div class="grid feat">
+          <article class="card svc rv" style="--d:0.0s">
+            <div class="art big">
+              <svg viewBox="0 0 200 96" role="img" aria-label="Social Media Marketing animated illustration"><g class="a-fu"><rect class="ac" x="40" y="50" width="40" height="26" rx="10"/></g><g class="a-fu" style="animation-delay:1.3s"><circle fill="#E0B0FF" cx="110" cy="62" r="12"/></g><g class="a-fu" style="animation-delay:2.4s"><rect class="ac" opacity=".7" x="130" y="50" width="34" height="26" rx="10"/></g></svg>
+            </div>
+            <div class="sb">
+              <h3>Social Media Marketing</h3>
+              <p>Content and campaigns that help your brand show up, engage, and grow on social platforms.</p>
+              <div class="dv">
+              </div>
+              <a class="enq" href="/get-a-quote/?service=Social%20Media%20Marketing" aria-label="Enquire now about Social Media Marketing">Enquire Now <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+<!-- ================================================================
+     07. CATEGORY 04 — WEBSITE & LANDING PAGES (2 services)
+     ================================================================ -->
+    <section id="web" class="cat alt" style="--acc:#CFB53B">
+      <span id="website-development"></span>
+      <div class="wrap">
+        <span class="bn" aria-hidden="true">04</span><span class="eyebrow rv">04 / WEB DEVELOPMENT</span>
+        <h2 class="rv">Digital Experiences That Make an Impression.</h2>
+        <p class="lead rv">Create responsive websites and focused landing pages for businesses and personal brands.</p>
+        <div class="grid big">
+          <article class="card svc rv" style="--d:0.0s">
+            <div class="art big">
+              <svg viewBox="0 0 200 96" role="img" aria-label="Website Creation animated illustration"><rect class="ml" x="30" y="10" width="140" height="76" rx="8"/><path class="ml" d="M30 26H170"/><circle class="ac" cx="40" cy="18" r="2.5"/><circle fill="#E0B0FF" cx="49" cy="18" r="2.5"/><circle class="m" cx="58" cy="18" r="2.5"/><rect class="ac a-fi" opacity=".5" x="40" y="34" width="120" height="22" rx="4"/><rect class="m a-fi" style="animation-delay:.4s" x="40" y="62" width="56" height="16" rx="4"/><rect class="m a-fi" style="animation-delay:.8s" x="104" y="62" width="56" height="16" rx="4"/></svg>
+            </div>
+            <div class="sb">
+              <h3>Website Creation</h3>
+              <p>A clean, responsive website for your business or personal brand.</p>
+              <div class="dv">
+              </div>
+              <a class="enq" href="/get-a-quote/?service=Website%20Creation" aria-label="Enquire now about Website Creation">Enquire Now <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          <article class="card svc rv" style="--d:0.1s">
+            <div class="art big">
+              <svg viewBox="0 0 200 96" role="img" aria-label="Landing Page Creation animated illustration"><rect class="ac a-fi" opacity=".6" x="40" y="12" width="120" height="12" rx="3"/><rect class="m a-fi" style="animation-delay:.4s" x="40" y="30" width="120" height="30" rx="3"/><rect class="ac a-fi" style="animation-delay:.8s" x="76" y="68" width="48" height="14" rx="7"/></svg>
+            </div>
+            <div class="sb">
+              <h3>Landing Page Creation</h3>
+              <p>Focused pages built around one offer or campaign goal.</p>
+              <div class="dv">
+              </div>
+              <a class="enq" href="/get-a-quote/?service=Landing%20Page%20Creation" aria-label="Enquire now about Landing Page Creation">Enquire Now <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+<!-- ================================================================
+     08. CATEGORY 05 — CONTENT & EMAIL MARKETING (3 services)
+     ================================================================ -->
+    <section id="content" class="cat" style="--acc:#E0B0FF">
+      <span id="content-marketing"></span>
+      <div class="wrap">
+        <span class="bn" aria-hidden="true">05</span><span class="eyebrow rv">05 / CONTENT &amp; COMMUNICATION</span>
+        <h2 class="rv">Content That Communicates. Campaigns That Connect.</h2>
+        <p class="lead rv">Create useful content and meaningful communication that helps your brand reach and engage its audience.</p>
+        <div class="grid ">
+          <article class="card svc rv" style="--d:0.0s">
+            <div class="art">
+              <svg viewBox="0 0 200 96" role="img" aria-label="Content Marketing animated illustration"><rect class="ac a-tx" x="30" y="14" width="80" height="10" rx="5"/><rect class="m a-tx" style="animation-delay:0.0s" x="30" y="34" width="140" height="6" rx="3"/><rect class="m a-tx" style="animation-delay:0.25s" x="30" y="48" width="120" height="6" rx="3"/><rect class="m a-tx" style="animation-delay:0.5s" x="30" y="62" width="130" height="6" rx="3"/></svg>
+            </div>
+            <div class="sb">
+              <h3>Content Marketing</h3>
+              <p>Useful written content that supports your brand and search visibility.</p>
+              <div class="dv">
+              </div>
+              <a class="enq" href="/get-a-quote/?service=Content%20Marketing" aria-label="Enquire now about Content Marketing">Enquire Now <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          <article class="card svc rv" style="--d:0.1s">
+            <div class="art">
+              <svg viewBox="0 0 200 96" role="img" aria-label="Video Marketing animated illustration"><rect class="ml" x="40" y="12" width="120" height="62" rx="8"/><path class="ac a-pu" d="M92 30l24 13-24 13z"/><rect class="m" x="40" y="82" width="120" height="4" rx="2"/><rect class="ac a-gr" style="--d:0s" x="40" y="82" width="120" height="4" rx="2"/></svg>
+            </div>
+            <div class="sb">
+              <h3>Video Marketing</h3>
+              <p>Video content that explains, promotes, or showcases what you do.</p>
+              <div class="dv">
+              </div>
+              <a class="enq" href="/get-a-quote/?service=Video%20Marketing" aria-label="Enquire now about Video Marketing">Enquire Now <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          <article class="card svc rv" style="--d:0.2s">
+            <div class="art">
+              <svg viewBox="0 0 200 96" role="img" aria-label="Email Marketing animated illustration"><rect class="ml" x="50" y="24" width="100" height="56" rx="8"/><path class="ml a-fl" d="M50 26L100 56L150 26"/><circle class="ac a-pu" cx="150" cy="24" r="8"/></svg>
+            </div>
+            <div class="sb">
+              <h3>Email Marketing</h3>
+              <p>Email campaigns that keep you in touch with customers and leads.</p>
+              <div class="dv">
+              </div>
+              <a class="enq" href="/get-a-quote/?service=Email%20Marketing" aria-label="Enquire now about Email Marketing">Enquire Now <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+<!-- ================================================================
+     09. CATEGORY 06 — ANALYTICS & REPORTING (3 services)
+     ================================================================ -->
+    <section id="analytics" class="cat alt" style="--acc:#FFBF00">
+      <div class="wrap">
+        <span class="bn" aria-hidden="true">06</span><span class="eyebrow rv">06 / DATA &amp; INSIGHTS</span>
+        <h2 class="rv">Understand Your Performance. Make Smarter Decisions.</h2>
+        <p class="lead rv">Measure your website and campaign performance through useful analytics, tracking, and reporting.</p>
+        <div class="grid ">
+          <article class="card svc rv" style="--d:0.0s">
+            <div class="art">
+              <svg viewBox="0 0 200 96" role="img" aria-label="Google Analytics Setup and Analysis animated illustration"><path class="ml" d="M20 80H180M20 56H180M20 32H180"/><path class="ac" opacity=".12" d="M20 72L50 54L80 62L116 34L150 42L180 14V80H20Z"/><path class="as a-dr" d="M20 72L50 54L80 62L116 34L150 42L180 14"/><circle class="ac a-pu" cx="116" cy="34" r="4"/></svg>
+            </div>
+            <div class="sb">
+              <h3>Google Analytics Setup and Analysis</h3>
+              <p>Set up tracking and read the data to understand your website visitors.</p>
+              <div class="dv">
+              </div>
+              <a class="enq" href="/get-a-quote/?service=Google%20Analytics%20Setup%20and%20Analysis" aria-label="Enquire now about Google Analytics Setup and Analysis">Enquire Now <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          <article class="card svc rv" style="--d:0.1s">
+            <div class="art">
+              <svg viewBox="0 0 200 96" role="img" aria-label="Google Search Console Setup and Analysis animated illustration"><rect class="ac a-rs" style="animation-delay:0s" x="40" y="50" width="18" height="30" rx="3"/><rect class="ac a-rs" style="animation-delay:0.3s" x="70" y="36" width="18" height="44" rx="3"/><rect class="ac a-rs" style="animation-delay:0.6s" x="100" y="56" width="18" height="24" rx="3"/><rect class="ac a-rs" style="animation-delay:0.9s" x="130" y="24" width="18" height="56" rx="3"/><circle class="as a-ring" cx="160" cy="22" r="14" stroke-width="2"/></svg>
+            </div>
+            <div class="sb">
+              <h3>Google Search Console Setup and Analysis</h3>
+              <p>Connect Google Search Console and review how your site appears in Google Search.</p>
+              <div class="dv">
+              </div>
+              <a class="enq" href="/get-a-quote/?service=Google%20Search%20Console%20Setup%20and%20Analysis" aria-label="Enquire now about Google Search Console Setup and Analysis">Enquire Now <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          <article class="card svc rv" style="--d:0.2s">
+            <div class="art">
+              <svg viewBox="0 0 200 96" role="img" aria-label="Website and Campaign Performance Reporting animated illustration"><rect class="ac" x="30" y="14" width="10" height="10" rx="2"/><rect class="m" x="48" y="17" width="122" height="4" rx="2"/><rect class="ac a-gr" style="--d:0s" x="48" y="17" width="90" height="4" rx="2"/><rect class="ac" x="30" y="38" width="10" height="10" rx="2"/><rect class="m" x="48" y="41" width="122" height="4" rx="2"/><rect class="ac a-gr" style="--d:0.5s" x="48" y="41" width="60" height="4" rx="2"/><rect class="ac" x="30" y="62" width="10" height="10" rx="2"/><rect class="m" x="48" y="65" width="122" height="4" rx="2"/><rect class="ac a-gr" style="--d:1s" x="48" y="65" width="110" height="4" rx="2"/></svg>
+            </div>
+            <div class="sb">
+              <h3>Website and Campaign Performance Reporting</h3>
+              <p>Clear reports on how your website and campaigns are performing.</p>
+              <div class="dv">
+              </div>
+              <a class="enq" href="/get-a-quote/?service=Website%20and%20Campaign%20Performance%20Reporting" aria-label="Enquire now about Website and Campaign Performance Reporting">Enquire Now <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+<!-- ================================================================
+     10. CATEGORY 07 — LEAD GENERATION & AFFILIATE MARKETING (2 services)
+     ================================================================ -->
+    <section id="lead" class="cat" style="--acc:#CFB53B">
+      <div class="wrap">
+        <span class="bn" aria-hidden="true">07</span><span class="eyebrow rv">07 / BUSINESS GROWTH</span>
+        <h2 class="rv">Turn Opportunities Into Connections.</h2>
+        <p class="lead rv">Support your business growth with lead generation strategies and affiliate marketing solutions.</p>
+        <div class="grid big">
+          <article class="card svc rv" style="--d:0.0s">
+            <div class="art big">
+              <svg viewBox="0 0 200 96" role="img" aria-label="Lead Generation animated illustration"><path class="ml" d="M40 14H160L118 50V80H82V50Z"/><circle class="ac a-fa" cx="80" cy="16" r="4"/><circle fill="#E0B0FF" class="a-fa" style="animation-delay:.8s" cx="104" cy="16" r="4"/><circle class="ac a-fa" style="animation-delay:1.6s" cx="128" cy="16" r="4"/></svg>
+            </div>
+            <div class="sb">
+              <h3>Lead Generation</h3>
+              <p>Campaigns and pages designed to bring enquiries from potential customers.</p>
+              <div class="dv">
+              </div>
+              <a class="enq" href="/get-a-quote/?service=Lead%20Generation" aria-label="Enquire now about Lead Generation">Enquire Now <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          <article class="card svc rv" style="--d:0.1s">
+            <div class="art big">
+              <svg viewBox="0 0 200 96" role="img" aria-label="Affiliate Marketing animated illustration"><path class="ml" d="M40 64L100 24L160 64H40"/><circle class="ac a-pu" cx="40" cy="64" r="9"/><circle fill="#E0B0FF" class="a-pu" style="animation-delay:.5s" cx="100" cy="24" r="9"/><circle class="ac a-pu" style="animation-delay:1s" cx="160" cy="64" r="9"/><circle fill="#fff" class="a-tr" style="--tx:120px" cx="40" cy="64" r="3.5"/></svg>
+            </div>
+            <div class="sb">
+              <h3>Affiliate Marketing</h3>
+              <p>Working with partners who promote your products or services.</p>
+              <div class="dv">
+              </div>
+              <a class="enq" href="/get-a-quote/?service=Affiliate%20Marketing" aria-label="Enquire now about Affiliate Marketing">Enquire Now <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+<!-- ================================================================
+     11. FINAL CTA
+     ================================================================ -->
+    <section class="cta2">
+      <div class="wrap">
+        <h2 class="rv">Ready to Take Your Business to the Next Level?</h2>
+        <p class="rv">Tell us what you want to achieve. We'll help you explore the right digital solutions for your business.</p>
+        <div class="btns rv" style="justify-content:center;--d:.2s">
+          <a class="btn" href="/get-a-quote/">Get a Quote</a><a class="btn ghost" href="/contact/">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+</main>
+
+<!-- ================================================================
+     12. FOOTER  — same on every page (social icons only here)
+     ================================================================ -->
+<footer>
+  <div class="wrap">
+    <div class="fg">
+      <div>
+        <a href="/" aria-label="Digital Vishu Agency – Home"><img src="favicon.png" width="180" height="114" alt="Digital Vishu Agency official logo"></a>
+        <p>We Build Brands. We Drive Growth.</p>
+        <div class="soc">
+          <a href="https://youtube.com/@vishu-paradise?si=BysnoKHs9nsfDANc" target="_blank" rel="noopener noreferrer" aria-label="Digital Vishu on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM9.6 15.6V8.4l6.2 3.6z"/></svg></a><a href="https://www.instagram.com/vishu.paradise/?__pwa=1" target="_blank" rel="noopener noreferrer" aria-label="Digital Vishu on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM17.4 5.6a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2z"/></svg></a><a href="https://www.linkedin.com/in/vishal-thapa-94765a428?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" aria-label="Digital Vishu on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.1 2.1 2.1 0 0 1 0 4.1zM7.1 20.5H3.6V9h3.6v11.5z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about/">About Us</a></li>
+          <li><a href="/services/">Services</a></li>
+          <li><a href="/portfolio/">Portfolio</a></li>
+          <li><a href="/case-studies/">Case Studies</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/games/">Games</a></li>
+          <li><a href="/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="/games/academy/">Digital Vishu Academy</a></li>
+          <li><a href="/games/the-business-life/">The Business Life</a></li>
+          <li><a href="/games/upcoming/">Upcoming Games</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li>Kotdwara, Uttarakhand, India</li>
+          <li><a href="/contact/">Contact Us</a></li>
+          <li><a href="/get-a-quote/">Get a Quote</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bot">
+      <span>© 2026 Digital Vishu Agency. All Rights Reserved.</span><span><a href="/privacy/">Privacy Policy</a> · <a href="/terms/">Terms &amp; Conditions</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- SCRIPT -->
+<script>
+/* ==========================================================================
+   DIGITAL VISHU AGENCY — SERVICES PAGE SCRIPT
+   01 Mobile menu · 02 Scroll reveal · 03 Page transition · 04 Process loop
+   ========================================================================== */
+(function () {
+  var reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* ---------- 01. MOBILE MENU ---------- */
+  var burger = document.getElementById("bg"), nav = document.getElementById("nav");
+  function toggleMenu(open) {
+    nav.classList.toggle("o", open);
+    burger.classList.toggle("o", open);
+    burger.setAttribute("aria-expanded", open);
+    burger.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+  }
+  burger.addEventListener("click", function () { toggleMenu(!nav.classList.contains("o")); });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape") toggleMenu(false); });
+
+  /* ---------- 02. SCROLL REVEAL ---------- */
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (x) {
+      if (x.isIntersecting) { x.target.classList.add("in"); io.unobserve(x.target); }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll(".rv").forEach(function (el) { io.observe(el); });
+
+  /* ---------- 03. PAGE TRANSITION (fade out before opening another page) ---------- */
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest("a");
+    if (!a || a.target || e.metaKey || e.ctrlKey || e.shiftKey || reduce) return;
+    var u = new URL(a.href, location.href);
+    if (u.origin !== location.origin || u.pathname === location.pathname) return;
+    e.preventDefault();
+    document.body.classList.add("out");
+    setTimeout(function () { location.href = a.href; }, 200);
+  });
+  window.addEventListener("pageshow", function () { document.body.classList.remove("out"); });
+
+  /* ---------- 04. PROCESS LOOP: Discover → Plan → Create → Optimize → repeat ---------- */
+  var proc = document.getElementById("proc");
+  if (proc) {
+    var steps = proc.querySelectorAll(".st"), index = 0, timer = null, inView = false;
+    function show(k) {
+      steps.forEach(function (s, j) { s.classList.toggle("on", j === k); });
+      proc.style.setProperty("--p", k / (steps.length - 1));        /* progress line */
+    }
+    if (reduce) {                                                    /* reduced motion: show all steps */
+      proc.classList.add("static");
+      steps.forEach(function (s) { s.classList.add("on"); });
+    } else {
+      function start() {
+        if (timer || !inView || document.hidden) return;
+        show(index);
+        timer = setInterval(function () { index = (index + 1) % steps.length; show(index); }, 1800);
+      }
+      function stop() { clearInterval(timer); timer = null; }       /* clean up timer */
+      new IntersectionObserver(function (es) {
+        inView = es[0].isIntersecting; inView ? start() : stop();
+      }, { threshold: 0.3 }).observe(proc);
+      document.addEventListener("visibilitychange", function () { document.hidden ? stop() : start(); });
+      window.addEventListener("pagehide", stop);
+    }
+  }
+})();
+</script>
+</body>
+</html>
