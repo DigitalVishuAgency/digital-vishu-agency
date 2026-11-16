@@ -567,6 +567,46 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--lav);outline-offset
     padding: 5px 0 !important;
   }
 }
+      /* MOBILE HAMBURGER ICON VISIBILITY FIX */
+@media (max-width: 1060px) {
+
+  header .nav {
+    position: relative !important;
+  }
+
+  header .burger {
+    position: absolute !important;
+    top: 50% !important;
+    right: 16px !important;
+    transform: translateY(-50%) !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 46px !important;
+    height: 46px !important;
+    padding: 10px !important;
+
+    background: transparent !important;
+    border: 1px solid rgba(240,239,208,.3) !important;
+    border-radius: 10px !important;
+
+    z-index: 1500 !important;
+    cursor: pointer;
+  }
+
+  header .burger span {
+    display: block !important;
+    width: 23px !important;
+    height: 2px !important;
+    min-height: 2px !important;
+    background: #F0EFD0 !important;
+    border-radius: 5px !important;
+    opacity: 1 !important;
+  }
+}
 </style>
 </head>
 <body>
