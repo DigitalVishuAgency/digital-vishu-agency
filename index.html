@@ -523,6 +523,50 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--lav);outline-offset
     padding: 5px 0 !important;
   }
 }
+      /* MOBILE NAVIGATION FINAL SPACING & CLOSE BUTTON FIX */
+@media (max-width: 1060px) {
+
+  header {
+    z-index: 1200 !important;
+  }
+
+  header nav#nav {
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+
+    height: 100vh !important;
+    height: 100dvh !important;
+
+    padding: 65px 24px 30px !important;
+    overflow-y: auto !important;
+
+    z-index: 1200 !important;
+  }
+
+  /* Close button always visible */
+  header .burger {
+    position: fixed !important;
+    top: 12px !important;
+    right: 20px !important;
+    z-index: 1300 !important;
+
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Navigation spacing */
+  header nav#nav ul {
+    gap: 12px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  header nav#nav ul li a {
+    padding: 5px 0 !important;
+  }
+}
 </style>
 </head>
 <body>
