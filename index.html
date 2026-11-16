@@ -484,6 +484,45 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--lav);outline-offset
     margin-top: 25px;
   }
 }
+      /* FULL HEIGHT MOBILE NAVIGATION */
+@media (max-width: 1060px) {
+
+  header nav#nav {
+    position: fixed !important;
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+
+    width: min(88vw, 340px) !important;
+    height: 100vh !important;
+    height: 100dvh !important;
+    max-height: 100dvh !important;
+
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+
+    padding: 100px 26px 35px !important;
+    box-sizing: border-box !important;
+  }
+
+  header nav#nav ul {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    gap: 16px !important;
+    width: 100% !important;
+  }
+
+  header nav#nav ul li {
+    width: 100% !important;
+  }
+
+  header nav#nav ul li a {
+    font-size: 17px !important;
+    padding: 5px 0 !important;
+  }
+}
 </style>
 </head>
 <body>
