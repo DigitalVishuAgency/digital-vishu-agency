@@ -15,8 +15,8 @@
     <meta property="og:title" content="About Digital Vishu Agency | Meet Founder Vishal Thapa">
     <meta property="og:description" content="Discover Digital Vishu Agency, founded by Vishal Thapa. Learn about our story, mission, values, digital marketing expertise, and vision for helping businesses grow online.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.example.com/about/">
-    <meta property="og:image" content="https://www.example.com/assets/logo.png">
+    <meta property="og:url" content="https://digitalvishu.website/about/"> 
+<meta property="og:image" content="https://digitalvishu.website/favicon.webp">
     <meta name="twitter:card" content="summary_large_image">
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","name":"Digital Vishu Agency","url":"https://www.example.com/","logo":"https://www.example.com/assets/logo.png","founder":{"@id":"https://www.example.com/#vishal"},"address":{"@type":"PostalAddress","addressLocality":"Kotdwara","addressRegion":"Uttarakhand","addressCountry":"IN"},"sameAs":["https://youtube.com/@vishu-paradise","https://www.instagram.com/vishu.paradise/","https://www.linkedin.com/in/vishal-thapa-94765a428"]},{"@type":"Person","@id":"https://www.example.com/#vishal","name":"Vishal Thapa","jobTitle":"Founder & Digital Marketer","worksFor":{"@type":"Organization","name":"Digital Vishu Agency"}}]}</script>
 
@@ -245,6 +245,90 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--lav);outline-offset
 
 /* ---------- F. REDUCED MOTION (about page extras) ---------- */
 @media(prefers-reduced-motion:reduce){.hero .w{opacity:1;transform:none}.rv.clip{clip-path:none}}
+       /* MOBILE NAVIGATION FINAL SPACING & CLOSE BUTTON FIX */
+@media (max-width: 1060px) {
+
+  header {
+    z-index: 1200 !important;
+  }
+
+  header nav#nav {
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+
+    height: 100vh !important;
+    height: 100dvh !important;
+
+    padding: 65px 24px 30px !important;
+    overflow-y: auto !important;
+
+    z-index: 1200 !important;
+  }
+
+  /* Close button always visible */
+  header .burger {
+    position: fixed !important;
+    top: 12px !important;
+    right: 20px !important;
+    z-index: 1300 !important;
+
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Navigation spacing */
+  header nav#nav ul {
+    gap: 12px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  header nav#nav ul li a {
+    padding: 5px 0 !important;
+  }
+}
+      /* MOBILE HAMBURGER ICON VISIBILITY FIX */
+@media (max-width: 1060px) {
+
+  header .nav {
+    position: relative !important;
+  }
+
+  header .burger {
+    position: absolute !important;
+    top: 50% !important;
+    right: 16px !important;
+    transform: translateY(-50%) !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 46px !important;
+    height: 46px !important;
+    padding: 10px !important;
+
+    background: transparent !important;
+    border: 1px solid rgba(240,239,208,.3) !important;
+    border-radius: 10px !important;
+
+    z-index: 1500 !important;
+    cursor: pointer;
+  }
+
+  header .burger span {
+    display: block !important;
+    width: 23px !important;
+    height: 2px !important;
+    min-height: 2px !important;
+    background: #F0EFD0 !important;
+    border-radius: 5px !important;
+    opacity: 1 !important;
+  }
+}
 </style>
 </head>
 <body>
