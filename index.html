@@ -100,12 +100,6 @@ nav a.l::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;b
 nav a.l:hover,nav a.l[aria-current]{color:var(--amber)}
 nav a.l:hover::after,nav a.l[aria-current]::after{width:100%}
 .nav .btn{padding:10px 22px;flex:none}
-/* Games dropdown */
-.dd{position:relative;padding:10px 0}
-.dd .m{position:absolute;top:100%;left:-14px;min-width:230px;background:var(--ch2);border:1px solid #3a3a3a;border-radius:14px;padding:8px;opacity:0;visibility:hidden;transform:translateY(10px);transition:.25s}
-.dd:hover .m,.dd:focus-within .m{opacity:1;visibility:visible;transform:none}
-.m a{display:block;padding:9px 12px;border-radius:8px;font-size:.9rem}
-.m a:hover{background:#333;color:var(--amber)}
 /* hamburger */
 .burger{display:none;background:none;border:0;color:var(--cream);width:46px;height:46px;cursor:pointer;position:relative;z-index:60}
 .burger span{display:block;height:2px;background:currentColor;margin:6px 11px;transition:.3s}
@@ -167,8 +161,6 @@ nav a.l:hover::after,nav a.l[aria-current]::after{width:100%}
 .grid>.card:nth-child(2) .cimg{background:linear-gradient(135deg,var(--lav),var(--amber))}
 .grid>.card:nth-child(3) .cimg{background:linear-gradient(135deg,var(--amber),#6b5a10)}
 
-/* ---------- 10. GAMES / DIGITAL VISHU ACADEMY ---------- */
-/* uses .split + .ph from sections 02 and 07 */
 
 /* ---------- 11. PROCESS — FROM VISION TO GROWTH ---------- */
 .proc{--p:0;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:56px;position:relative}
@@ -625,11 +617,6 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--lav);outline-offset
         <li><a class="l" href="/portfolio/">Portfolio</a></li>
         <li><a class="l" href="/case-studies/">Case Studies</a></li>
         <li><a class="l" href="/blog/">Blog</a></li>
-        <li class="dd"><a class="l" href="/games/">Games ▾</a>
-        <div class="m">
-          <a href="/games/academy/">Digital Vishu Academy</a><a href="/games/the-business-life/">The Business Life</a><a href="/games/upcoming/">Upcoming Games</a>
-        </div>
-        </li>
         <li><a class="l" href="/contact/">Contact Us</a></li>
       </ul>
       <div class="mq">
@@ -914,31 +901,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--lav);outline-offset
     </section>
 
 <!-- ================================================================
-     09. DIGITAL VISHU ACADEMY / GAMES
-     ================================================================ -->
-    <section>
-      <div class="wrap split">
-        <div class="rv">
-          <span class="eyebrow">DIGITAL VISHU ACADEMY</span>
-          <h2>Beyond Marketing. Into New Digital Worlds.</h2>
-          <p>Explore Digital Vishu Academy — an ambitious gaming experience where players can learn, build businesses, compete, and create their own success stories.</p>
-          <p><strong style="color:var(--amber)">Featured: The Business Life.</strong> An ambitious business simulation experience where players can learn, build businesses, compete, and create their own success stories.</p>
-          <p style="font-size:.9rem;opacity:.75">In development and not yet playable. Digital Vishu Agency remains our primary brand.</p>
-          <div class="btns">
-            <a class="btn" href="/games/academy/">Explore Academy</a><a class="btn ghost" href="/games/the-business-life/">Discover The Business Life</a>
-          </div>
-        </div>
-        <div class="ph rv" style="--d:.15s;background:linear-gradient(160deg,#2a2a2a,#3b2a52)" role="img" aria-label="Placeholder visual for The Business Life game">
-          <div>
-            <div style="font-size:3rem">
-              🎮
-            </div>
-            <h3 style="color:var(--amber)">The Business Life</h3>
-            <p>Game visual placeholder<br><small>In development, not yet playable</small></p>
-          </div>
-        </div>
-      </div>
-    </section>
+    
 
 <!-- ================================================================
      10. OUR PROCESS — FROM VISION TO GROWTH
@@ -1050,16 +1013,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--lav);outline-offset
           <li><a href="/portfolio/">Portfolio</a></li>
           <li><a href="/case-studies/">Case Studies</a></li>
           <li><a href="/blog/">Blog</a></li>
-          <li><a href="/games/">Games</a></li>
           <li><a href="/contact/">Contact Us</a></li>
-        </ul>
-      </div>
-      <div>
-        <h3>Explore</h3>
-        <ul>
-          <li><a href="/games/academy/">Digital Vishu Academy</a></li>
-          <li><a href="/games/the-business-life/">The Business Life</a></li>
-          <li><a href="/games/upcoming/">Upcoming Games</a></li>
         </ul>
       </div>
       <div>
