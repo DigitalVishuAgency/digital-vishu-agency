@@ -1,1104 +1,566 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Digital Vishu Agency | SEO & Digital Marketing</title>
-<meta name="description" content="Digital Vishu Agency helps businesses grow with SEO, social media marketing, website development and creative branding solutions.">
-    <link rel="canonical" href="https://digitalvishu.website/">
-    <link rel="icon" href="/favicon.webp" sizes="any">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icon-32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icon-16.png">
-    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-    <link rel="manifest" href="/assets/site.webmanifest">
-    <meta name="theme-color" content="#171717">
-    <meta property="og:title" content="Digital Vishu Agency | Vishal Thapa – Digital Marketing &amp; SEO">
-    <meta property="og:description" content="Digital Vishu Agency, founded by Vishal Thapa, provides SEO, digital marketing, social media marketing, website development and branding services to help businesses grow online.">
-    <meta property="og:type" content="website">
-   <meta property="og:url" content="https://digitalvishu.website/">
-<meta property="og:image" content="https://digitalvishu.website/favicon.webp">
-    <meta name="twitter:card" content="summary_large_image">
-    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","name":"Digital Vishu Agency","url":"https://www.example.com/","logo":"https://www.example.com/assets/logo.png","founder":{"@id":"https://www.example.com/#vishal"},"address":{"@type":"PostalAddress","addressLocality":"Kotdwara","addressRegion":"Uttarakhand","addressCountry":"IN"},"sameAs":["https://youtube.com/@vishu-paradise","https://www.instagram.com/vishu.paradise/","https://www.linkedin.com/in/vishal-thapa-94765a428"]},{"@type":"Person","@id":"https://www.example.com/#vishal","name":"Vishal Thapa","jobTitle":"Founder & Digital Marketer","worksFor":{"@type":"Organization","name":"Digital Vishu Agency"}}]}</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Digital Vishu Agency | Digital Marketing &amp; Website Development</title>
+<meta name="description" content="Digital Vishu Agency by Vishal Thapa offers SEO, Google Ads, Meta Ads, social media marketing and website development services in Kotdwar, Uttarakhand.">
+<link rel="canonical" href="https://digitalvishu.website/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Digital Vishu Agency | Digital Marketing &amp; Website Development">
+<meta property="og:description" content="SEO, Google Ads, Meta Ads, social media marketing and website development in Kotdwar, Uttarakhand.">
+<meta property="og:url" content="https://digitalvishu.website/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Digital Vishu Agency">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&amp;family=DM+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"Organization","name":"Digital Vishu Agency","url":"https://digitalvishu.website/","founder":{"@type":"Person","name":"Vishal Thapa"},"address":{"@type":"PostalAddress","addressLocality":"Kotdwar","addressRegion":"Uttarakhand","addressCountry":"IN"}},
+{"@type":"Person","name":"Vishal Thapa","jobTitle":"Founder, Digital Marketer","worksFor":{"@type":"Organization","name":"Digital Vishu Agency"},"address":{"@type":"PostalAddress","addressLocality":"Kotdwar","addressRegion":"Uttarakhand","addressCountry":"IN"}}]}
+</script>
 
-  <!-- ================================================================
-       STYLES  (full CSS is organised into numbered sections)
-       ================================================================ -->
-  <style>
-/* ==========================================================================
-   DIGITAL VISHU AGENCY — HOMEPAGE STYLES
-   Sections: 01 Variables · 02 Base · 03 Buttons · 04 Header · 05 Hero
-             06 Cards (What We Do / Services / Blog) · 07 About · 08 Portfolio
-             09 Case Studies · 10 Games · 11 Process · 12 Final CTA
-             13 Footer · 14 Animations · 15 Accessibility
-   ========================================================================== */
+<style>
+/* ==========================================================
+   CSS — organised in the same order as the page
+   0 Base · 1 Header · 2 Hero · 3 Marquee · 4 Intro · 5 Services
+   6 Why us · 7 Portfolio · 8 Founder · 9 Journey · 10 Process
+   11 FAQ · 12 Final CTA · 13 Footer · 14 Animations · 15 Motion pref
+   ========================================================== */
 
-/* ---------- 01. VARIABLES (Golden Hour palette) ---------- */
-:root{
-  --amber:#FFBF00; --gold:#CFB53B; --lav:#E0B0FF; --cream:#F0EFD0;
-  --ch:#171717;    --ch2:#232323;
-  color-scheme:dark; box-sizing:border-box;
+/* ---------- 0. BASE ---------- */
+:root{--salmon:#FBA17E;--pale:#F7D794;--orange:#FF9A00;--deep:#EE6200;--ink:#171717;--white:#fff;--cream:#FFF9F0;
+--display:'Bricolage Grotesque',Impact,sans-serif;--body:'DM Sans',system-ui,sans-serif;--pad:clamp(1.1rem,4vw,3rem)}
+*,*::before,*::after{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{font-family:var(--body);background:var(--cream);color:var(--ink);line-height:1.6;overflow-x:hidden;-webkit-text-size-adjust:100%}
+img,svg{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--deep);outline-offset:3px}
+.wrap{width:100%;max-width:1280px;margin-inline:auto;padding-inline:var(--pad)}
+section{padding-block:clamp(4rem,9vw,8rem)}
+h1,h2,h3{font-family:var(--display);line-height:1.02;letter-spacing:-.02em}
+h2{font-size:clamp(2rem,5.5vw,4.2rem);font-weight:800;text-transform:uppercase;max-width:16ch;overflow-wrap:break-word}
+.lead{font-size:clamp(1rem,1.6vw,1.2rem);max-width:52ch;margin-top:1.2rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:.8rem 1.6rem;border-radius:999px;font-weight:700;text-decoration:none;border:2px solid var(--ink);transition:transform .25s,background .25s,color .25s}
+.btn:hover{transform:translateY(-3px)}
+.btn-fill{background:var(--deep);border-color:var(--deep);color:var(--white)}
+.btn-fill:hover{background:var(--ink);border-color:var(--ink)}
+.btn-line:hover{background:var(--ink);color:var(--cream)}
+
+/* ---------- 1. HEADER ---------- */
+.site-header{position:fixed;inset:0 0 auto;z-index:50;transition:background .3s,box-shadow .3s}
+.site-header.solid{background:rgba(255,249,240,.92);backdrop-filter:blur(10px);box-shadow:0 1px 0 rgba(23,23,23,.1)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{display:inline-flex;align-items:center;text-decoration:none;font-family:var(--display);font-weight:800;font-size:1.3rem;letter-spacing:.02em}
+.logo img{height:40px;width:auto}
+.menu{display:flex;align-items:center;gap:clamp(1rem,2.4vw,2.2rem);list-style:none;padding:0}
+.menu a{text-decoration:none;font-weight:500;position:relative;padding:.4rem 0}
+.menu a:not(.btn)::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:100%;background:var(--deep);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.menu a:not(.btn):hover::after,.menu a.active::after{transform:scaleX(1)}
+.menu .btn{min-height:42px;padding:.5rem 1.2rem}
+.burger{display:none;width:48px;height:48px;background:none;border:0;cursor:pointer;position:relative}
+.burger span{position:absolute;left:12px;right:12px;height:2px;background:var(--ink);transition:transform .3s,opacity .3s}
+.burger span:nth-child(1){top:17px}.burger span:nth-child(2){top:23px}.burger span:nth-child(3){top:29px}
+.burger[aria-expanded=true] span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.burger[aria-expanded=true] span:nth-child(2){opacity:0}
+.burger[aria-expanded=true] span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+@media(max-width:860px){
+ .burger{display:block}
+ .menu{position:fixed;inset:72px 0 auto 0;flex-direction:column;align-items:stretch;gap:0;background:var(--cream);padding:1rem var(--pad) 2rem;max-height:calc(100vh - 72px);overflow:auto;transform:translateY(-110%);visibility:hidden;transition:transform .4s,visibility .4s}
+ .menu.open{transform:none;visibility:visible}
+ .menu li{border-bottom:1px solid rgba(23,23,23,.1)}
+ .menu a{display:block;padding:1rem 0;font-size:1.2rem}
+ .menu .btn{margin-top:1rem;display:flex}
 }
 
-/* ---------- 02. BASE ---------- */
-*,*::before,*::after{box-sizing:inherit}
-html{scroll-behavior:smooth;scroll-padding-top:110px}
-body{margin:0;background:var(--ch);color:var(--cream);font:16px/1.65 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;overflow-x:hidden;animation:pageIn .7s both}
-body.out{opacity:0;transition:opacity .2s}
-h1,h2,h3{font-family:"Playfair Display",Georgia,serif;line-height:1.12;margin:0 0 .5em;font-weight:700}
-h1{font-size:clamp(2.3rem,7vw,4.8rem)} h2{font-size:clamp(1.8rem,4.4vw,2.9rem)} h3{font-size:1.25rem}
-a{color:inherit;text-decoration:none} img{max-width:100%;height:auto}
-.wrap{
-  width:100%;
-  max-width:1180px;
-  margin:0 auto;
-  padding:0 20px;
+/* ---------- 2. HERO ---------- */
+.hero{padding-top:calc(72px + clamp(2rem,5vw,4rem));overflow:hidden;position:relative}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(1.5rem,4vw,4rem);align-items:center}
+.badge{display:inline-flex;align-items:center;gap:.6rem;background:var(--white);border:1px solid rgba(23,23,23,.15);border-radius:999px;padding:.4rem 1rem;font-size:.78rem;font-weight:700;letter-spacing:.08em}
+.badge i{width:9px;height:9px;border-radius:50%;background:#2e9e4f;animation:pulse 1.8s infinite}
+.hero h1{font-size:clamp(2.6rem,8.4vw,7rem);font-weight:800;text-transform:uppercase;margin:1.2rem 0}
+.hero h1 .w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.08em}
+.hero h1 .w b{display:inline-block;transform:translateY(105%);animation:rise .8s cubic-bezier(.2,.7,.2,1) forwards;animation-delay:calc(var(--i)*.12s + .2s)}
+.hero h1 .w:nth-child(n+4) b{color:var(--deep)}
+.hero p{max-width:50ch}
+.hero .who{margin-top:1rem;font-weight:500}
+.cta-row{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.8rem}
+.fade{opacity:0;animation:fadeIn .8s ease forwards;animation-delay:var(--d,.9s)}
+.portrait{position:relative;aspect-ratio:4/5;width:100%;max-width:460px;justify-self:center}
+.portrait .frame{position:absolute;inset:0;border-radius:200px 200px 24px 24px;background:var(--pale);overflow:hidden;display:grid;place-items:center;text-align:center;padding:1.5rem;clip-path:inset(0 0 100% 0);animation:reveal 1.1s .4s cubic-bezier(.2,.7,.2,1) forwards}
+.portrait .frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.portrait .ph{font-weight:700;color:var(--ink);font-size:.95rem}
+.portrait .ph small{display:block;font-weight:400;margin-top:.4rem}
+.shape{position:absolute;pointer-events:none;animation:float 7s ease-in-out infinite}
+.s1{width:90px;height:90px;border-radius:50%;background:var(--orange);top:-14px;right:-8px}
+.s2{width:64px;height:64px;background:var(--salmon);bottom:40px;left:-22px;transform:rotate(18deg);animation-delay:-2s}
+.s3{width:46px;height:46px;border:6px solid var(--deep);border-radius:50%;bottom:-12px;right:18%;animation-delay:-4s}
+.tag{position:absolute;background:var(--ink);color:var(--cream);font-size:.8rem;font-weight:700;padding:.45rem .9rem;border-radius:999px;white-space:nowrap;animation:float 6s ease-in-out infinite}
+.t1{top:14%;left:-6%}.t2{top:52%;right:-6%;animation-delay:-2s}.t3{bottom:10%;left:2%;animation-delay:-3.5s}
+@media(max-width:900px){
+ .hero .wrap{grid-template-columns:1fr}
+ .portrait{max-width:340px;margin-top:1rem}
+ .t1{left:0}.t2{right:0}
 }
-section{padding:88px 0}
-.alt{background:var(--ch2)}
-.eyebrow{display:inline-block;font-size:.74rem;letter-spacing:.18em;font-weight:700;color:var(--ch);background:var(--amber);padding:6px 14px;border-radius:99px;margin-bottom:18px}
-.lead{max-width:650px;opacity:.82}
-.split{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
-.grid{display:grid;gap:22px;margin-top:42px;grid-template-columns:repeat(auto-fit,minmax(265px,1fr))}
-@media(max-width:700px){
-  .grid{
-    grid-template-columns:minmax(0,1fr);
-    width:100%;
-  }
+@media(max-width:480px){.cta-row .btn{width:100%}}
 
-  .card{
-    width:100%;
-    min-width:0;
-  }
+/* ---------- 3. MARQUEE ---------- */
+.marquee{padding:0;background:var(--ink);overflow:hidden;border-block:3px solid var(--ink)}
+.track{display:flex;width:max-content;animation:scroll 28s linear infinite}
+.marquee:hover .track{animation-play-state:paused}
+.track span{font-family:var(--display);font-weight:800;font-size:clamp(1.5rem,4vw,3rem);text-transform:uppercase;padding:.7rem 1.4rem;white-space:nowrap}
+.track span:nth-child(3n+1){color:var(--cream)}
+.track span:nth-child(3n+2){color:var(--orange)}
+.track span:nth-child(3n){color:var(--salmon)}
 
-  .wrap{
-    width:100%;
-    padding-left:16px;
-    padding-right:16px;
-  }
+/* ---------- 4. INTRO ---------- */
+.intro .cols{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1rem,3vw,2.5rem);margin-top:3rem}
+.intro .col{border-top:4px solid var(--deep);padding-top:1.2rem}
+.intro .col:nth-child(2){margin-top:2.5rem;border-color:var(--orange)}
+.intro .col:nth-child(3){margin-top:5rem;border-color:var(--salmon)}
+.num{font-family:var(--display);font-weight:800;color:var(--deep);font-size:1.1rem}
+.intro h3,.why h3{font-size:1.6rem;margin:.4rem 0 .6rem}
+@media(max-width:800px){.intro .cols{grid-template-columns:1fr}.intro .col:nth-child(n){margin-top:0}}
+
+/* ---------- 5. SERVICES ---------- */
+.services{background:var(--white)}
+.grid8{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:3rem}
+.card{background:var(--cream);border-radius:20px;padding:1.6rem;display:flex;flex-direction:column;gap:.7rem;transition:transform .3s,background .3s}
+.card:hover{transform:translateY(-6px);background:var(--pale)}
+.card svg{width:44px;height:44px;stroke:var(--deep);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;transition:transform .4s}
+.card:hover svg{transform:rotate(-8deg) scale(1.12)}
+.card h3{font-size:1.25rem}
+.card p{font-size:.95rem;flex:1}
+.card a{font-weight:700;text-decoration:none;border-bottom:2px solid var(--deep);align-self:flex-start;padding-block:.3rem}
+@media(max-width:1100px){.grid8{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.grid8{grid-template-columns:1fr}}
+
+/* ---------- 6. WHY US ---------- */
+.why{background:var(--ink);color:var(--cream)}
+.why h2{max-width:20ch}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:3rem}
+.why .item{border-left:3px solid var(--orange);padding-left:1.2rem}
+.why p{color:#e5dccd}
+@media(max-width:1000px){.grid4{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.grid4{grid-template-columns:1fr}}
+
+/* ---------- 7. PORTFOLIO ---------- */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
+.proj{display:flex;flex-direction:column;gap:.7rem}
+.shot{aspect-ratio:4/3;border-radius:18px;overflow:hidden;background:var(--pale);position:relative;display:grid;place-items:center;text-align:center;padding:1rem}
+.shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.proj:hover .shot img,.proj:hover .shot .ph{transform:scale(1.06)}
+.shot .ph{font-family:var(--display);font-weight:800;font-size:1.4rem;transition:transform .6s}
+.shot .ph small{display:block;font:400 .8rem var(--body);margin-top:.3rem}
+.proj:nth-child(2) .shot{background:var(--salmon)}.proj:nth-child(3) .shot{background:var(--orange)}
+.cat{font-size:.85rem;font-weight:700;color:var(--deep)}
+.proj h3{font-size:1.5rem}
+.proj a.link{font-weight:700;align-self:flex-start;border-bottom:2px solid var(--deep);text-decoration:none}
+@media(max-width:900px){.grid3{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.grid3{grid-template-columns:1fr}}
+
+/* ---------- 8. FOUNDER ---------- */
+.about{background:var(--pale);position:relative;overflow:hidden}
+.about .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(2rem,5vw,5rem);align-items:center}
+.about .portrait{max-width:400px;aspect-ratio:1/1.15}
+.about .portrait .frame{border-radius:24px;background:var(--salmon);animation:none;clip-path:none}
+.orb{position:absolute;width:min(46vw,420px);aspect-ratio:1;border-radius:50%;background:var(--orange);opacity:.25;right:-8%;top:-12%;animation:float 12s ease-in-out infinite}
+.about h2{max-width:14ch}
+.about .name{font-family:var(--display);font-weight:800;font-size:1.5rem;margin-top:1.4rem}
+.about .meta{font-weight:500;margin-bottom:1rem}
+.about .wrap>*{position:relative}
+@media(max-width:800px){.about .wrap{grid-template-columns:1fr}}
+
+/* ---------- 9. JOURNEY ---------- */
+.steps{position:relative;display:grid;gap:2rem;margin-top:3rem;padding-left:2.2rem}
+.steps::before,.steps .bar{content:"";position:absolute;left:7px;top:0;bottom:0;width:3px;background:rgba(23,23,23,.12)}
+.steps .bar{background:var(--deep);transform-origin:top;transform:scaleY(0);transition:transform 1.6s ease}
+.steps.in .bar{transform:scaleY(1)}
+.step{position:relative}
+.step::before{content:"";position:absolute;left:-2.2rem;top:.4rem;width:17px;height:17px;border-radius:50%;background:var(--cream);border:4px solid var(--deep)}
+.step h3{font-size:1.4rem;text-transform:uppercase}
+.step small{display:inline-block;margin-top:.4rem;font-weight:700;color:var(--deep)}
+@media(min-width:900px){
+ .journey .steps{grid-template-columns:repeat(3,1fr);padding:2.2rem 0 0}
+ .journey .steps::before,.journey .steps .bar{left:0;right:0;top:7px;bottom:auto;width:auto;height:3px}
+ .journey .steps .bar{transform:scaleX(0);transform-origin:left}
+ .journey .steps.in .bar{transform:scaleX(1)}
+ .journey .step::before{left:0;top:-2.2rem}
+ .journey .step{padding-right:1rem}
 }
-@media(max-width:800px){.split{grid-template-columns:1fr}}
 
-/* ---------- 03. BUTTONS ---------- */
-.btn{display:inline-block;padding:13px 28px;border-radius:99px;font:700 1rem inherit;font-family:inherit;border:2px solid var(--amber);background:var(--amber);color:var(--ch);cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s,color .2s}
-.btn:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(255,191,0,.3)}
-.btn:active{transform:scale(.97)}
-.btn.ghost{background:transparent;color:var(--cream)}
-.btn.ghost:hover{background:var(--cream);color:var(--ch);border-color:var(--cream)}
-.btns{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
-
-/* ---------- 04. HEADER & NAVIGATION ---------- */
-header{position:fixed;inset:0 0 auto 0;z-index:50;background:rgba(23,23,23,.96);backdrop-filter:blur(10px);border-bottom:1px solid #2e2e2e;padding-top:env(safe-area-inset-top,0)}
-.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;height:92px}
-/* logo (transparent PNG, shown directly on dark header) */
-.logo{display:block;flex:none}
-.logo img{display:block;height:68px;width:auto;aspect-ratio:768/488;object-fit:contain}
-/* links */
-nav{flex:1}
-nav ul{list-style:none;margin:0;padding:0;display:flex;justify-content:center;gap:24px;align-items:center}
-nav a.l{position:relative;font-size:.92rem;padding:6px 0;transition:color .2s}
-nav a.l::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--amber);transition:width .3s}
-nav a.l:hover,nav a.l[aria-current]{color:var(--amber)}
-nav a.l:hover::after,nav a.l[aria-current]::after{width:100%}
-.nav .btn{padding:10px 22px;flex:none}
-/* hamburger */
-.burger{display:none;background:none;border:0;color:var(--cream);width:46px;height:46px;cursor:pointer;position:relative;z-index:60}
-.burger span{display:block;height:2px;background:currentColor;margin:6px 11px;transition:.3s}
-.burger.o span:nth-child(1){transform:translateY(8px) rotate(45deg)}
-.burger.o span:nth-child(2){opacity:0}
-.burger.o span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
-.mq{display:none}
-/* mobile / tablet menu */
-@media(max-width:1060px){
-  .burger{display:block} .nav>.btn{display:none} .nav{height:80px} .logo img{height:56px}
-  nav{position:fixed;top:0;right:0;bottom:0;width:min(88vw,340px);flex:none;background:var(--ch);border-left:1px solid #333;padding:96px 26px 30px;transform:translateX(105%);transition:transform .4s;overflow-y:auto}
-  nav.o{transform:none}
-  nav ul{flex-direction:column;align-items:flex-start;gap:14px}
-  .dd .m{position:static;opacity:1;visibility:visible;transform:none;background:none;border:0;padding:2px 0 0 12px}
-  .mq{display:block;margin-top:24px}
-  .mq img{width:160px;height:auto;aspect-ratio:768/488;display:block;margin-bottom:16px}
+/* ---------- 10. PROCESS ---------- */
+.process{background:var(--white)}
+.process .steps{margin-top:3rem}
+.process .step .big{font-family:var(--display);font-weight:800;font-size:clamp(2.5rem,6vw,4rem);color:var(--orange);line-height:1}
+@media(min-width:900px){
+ .process .steps{grid-template-columns:repeat(4,1fr);padding:2.2rem 0 0}
+ .process .steps::before,.process .steps .bar{left:0;right:0;top:7px;bottom:auto;width:auto;height:3px}
+ .process .steps .bar{transform:scaleX(0);transform-origin:left}
+ .process .steps.in .bar{transform:scaleX(1)}
+ .process .step::before{left:0;top:-2.2rem}
+ .process .step{padding-right:1rem}
 }
 
-/* ---------- 05. HERO ---------- */
-.hero{min-height:100svh;display:flex;align-items:center;position:relative;overflow:hidden;padding:130px 0 80px}
-.hero .wrap{position:relative;z-index:2;width:100%}
-.hero em{font-style:normal;color:var(--amber)}
-.hero p{max-width:560px;font-size:1.1rem;opacity:.85}
-.orb{position:absolute;border-radius:50%;animation:float 9s ease-in-out infinite}
-.o1{width:420px;height:420px;right:-80px;top:14%;background:radial-gradient(circle at 30% 30%,var(--amber),var(--gold) 55%,#6b5a10)}
-.o2{width:170px;height:170px;right:26%;bottom:10%;background:radial-gradient(circle at 30% 30%,#fff4,var(--lav));animation-delay:-3s}
-.o3{width:90px;height:90px;right:8%;bottom:24%;border:3px solid var(--gold);animation-delay:-6s}
-.cube{position:absolute;width:110px;height:110px;right:38%;top:18%;border:2px solid var(--lav);border-radius:24px;transform:rotate(18deg);animation:float 11s ease-in-out infinite;opacity:.6}
-@media(max-width:700px){.o1{width:250px;height:250px;opacity:.4}.cube{display:none}}
-
-/* ---------- 06. CARDS (What We Do · Services · Why Choose Us · Blog) ---------- */
-.card{background:var(--ch2);border:1px solid #3a3a3a;border-radius:22px;padding:30px;transition:transform .3s,box-shadow .3s,border-color .3s}
-.alt .card{background:var(--ch)}
-.card:hover{transform:translateY(-8px);box-shadow:0 18px 40px rgba(0,0,0,.4);border-color:var(--amber)}
-.card p{opacity:.85}
-.ic{width:52px;height:52px;border-radius:15px;background:var(--amber);display:grid;place-items:center;font-size:1.5rem;margin-bottom:18px;transition:transform .4s}
-.card:hover .ic{transform:rotate(-8deg) scale(1.1)}
-.more{display:inline-block;margin-top:14px;font-weight:700;color:var(--amber);transition:padding .25s}
-.card:hover .more{padding-left:8px}
-.more:hover{text-decoration:underline}
-.bl .bg{aspect-ratio:16/9;border-radius:14px;margin-bottom:16px}
-
-/* ---------- 07. ABOUT ---------- */
-.ph{aspect-ratio:4/5;border-radius:26px;background:linear-gradient(160deg,#2a2a2a,#3a2f00);display:grid;place-items:center;text-align:center;padding:20px;border:2px dashed var(--gold)}
-.tags{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}
-.tags span{border:1px solid var(--gold);padding:5px 14px;border-radius:99px;font-size:.85rem}
-
-/* ---------- 08. PORTFOLIO ---------- */
-.pj{position:relative;border-radius:22px;overflow:hidden;aspect-ratio:4/3;color:var(--cream);display:block}
-.pj .bg{position:absolute;inset:0;transition:transform .6s}
-.pj:hover .bg{transform:scale(1.1)}
-.pj .ov{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:22px;background:linear-gradient(transparent 35%,rgba(23,23,23,.9))}
-.pj small{color:var(--amber);font-weight:700;letter-spacing:.1em}
-.demo{font-size:.78rem;opacity:.75}
-
-/* ---------- 09. CASE STUDIES ---------- */
-.cimg{aspect-ratio:16/9;border-radius:14px;margin-bottom:16px;background:linear-gradient(135deg,var(--gold),var(--lav));transition:transform .5s}
-.card:hover .cimg{transform:scale(1.03)}
-.grid>.card:nth-child(2) .cimg{background:linear-gradient(135deg,var(--lav),var(--amber))}
-.grid>.card:nth-child(3) .cimg{background:linear-gradient(135deg,var(--amber),#6b5a10)}
-
-
-/* ---------- 11. PROCESS — FROM VISION TO GROWTH ---------- */
-.proc{--p:0;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:56px;position:relative}
-.line{position:absolute;top:29px;left:12.5%;right:12.5%;height:3px;background:#3a3a3a;border-radius:3px}
-.line::after{content:"";position:absolute;right:-7px;top:-5px;width:13px;height:13px;border-radius:50%;background:var(--lav);box-shadow:0 0 12px var(--lav)}   /* lavender end accent */
-.fill{display:block;height:100%;width:calc(var(--p)*100%);background:linear-gradient(90deg,var(--gold),var(--amber));box-shadow:0 0 12px var(--amber);border-radius:3px;transition:width 1.4s cubic-bezier(.4,0,.2,1)}
-.st{position:relative;text-align:center;opacity:.6;transition:opacity .6s,color .6s}
-.st b{display:grid;place-items:center;width:58px;height:58px;margin:0 auto 16px;border-radius:50%;border:2px solid var(--amber);background:rgba(255,191,0,.16);color:var(--amber);font-size:1.05rem;position:relative;z-index:1;transition:.6s}
-.st h3{margin-bottom:6px}
-.st.on{opacity:1;color:#fff9dd}
-.st.on b{background:var(--amber);color:var(--ch);box-shadow:0 0 28px rgba(255,191,0,.65);transform:scale(1.12)}
-.proc.static .st{opacity:1} .proc.static{--p:1}
-@media(max-width:700px){   /* vertical timeline on mobile */
-  .proc{grid-template-columns:1fr;gap:34px}
-  .line{top:29px;bottom:29px;left:28px;right:auto;width:3px;height:auto}
-  .line::after{right:auto;left:-5px;top:auto;bottom:-7px}
-  .fill{width:100%;height:calc(var(--p)*100%);transition:height 1.4s cubic-bezier(.4,0,.2,1)}
-  .st{text-align:left;padding-left:80px}
-  .st b{position:absolute;left:0;top:0;margin:0}
-}
+/* ---------- 11. FAQ ---------- */
+.faq .list{max-width:820px;margin-top:2.5rem}
+.q{border-bottom:1px solid rgba(23,23,23,.2)}
+.q button{width:100%;min-height:56px;display:flex;justify-content:space-between;align-items:center;gap:1rem;text-align:left;background:none;border:0;cursor:pointer;font:700 clamp(1rem,2.2vw,1.2rem) var(--body);color:inherit;padding:1rem 0}
+.q button::after{content:"+";font-size:1.6rem;color:var(--deep);transition:transform .3s}
+.q button[aria-expanded=true]::after{transform:rotate(45deg)}
+.q .a{display:grid;grid-template-rows:0fr;transition:grid-template-rows .35s ease}
+.q .a>div{overflow:hidden}
+.q .a p{padding-bottom:1.2rem;max-width:62ch}
+.q button[aria-expanded=true]+.a{grid-template-rows:1fr}
 
 /* ---------- 12. FINAL CTA ---------- */
-.cta2{background:var(--ch);text-align:center;position:relative;overflow:hidden;border-top:1px solid #2e2e2e}
-.cta2 .wrap{position:relative;z-index:1}
-.cta2 p{max-width:560px;margin:0 auto;opacity:.85}
-.cta2::before,.cta2::after{content:"";position:absolute;border-radius:50%;animation:float 10s ease-in-out infinite}
-.cta2::before{width:260px;height:260px;left:-80px;top:-60px;background:radial-gradient(circle at 30% 30%,var(--amber),var(--gold) 60%,transparent 62%);opacity:.5}
-.cta2::after{width:200px;height:200px;right:-50px;bottom:-60px;background:radial-gradient(circle at 30% 30%,#fff4,var(--lav));opacity:.45;animation-delay:-4s}
+.cta{background:var(--deep);color:var(--white);position:relative;overflow:hidden;text-align:center}
+.cta .wrap{position:relative}
+.cta h2{max-width:14ch;margin-inline:auto;font-size:clamp(2.2rem,7vw,5.5rem)}
+.cta .lead{margin-inline:auto}
+.cta .cta-row{justify-content:center}
+.cta .btn-fill{background:var(--ink);border-color:var(--ink)}
+.cta .btn-fill:hover{background:var(--cream);color:var(--ink);border-color:var(--cream)}
+.cta .btn-line{border-color:var(--white);color:var(--white)}
+.cta .btn-line:hover{background:var(--white);color:var(--ink)}
+.cta .c1,.cta .c2{position:absolute;border-radius:50%;animation:float 10s ease-in-out infinite}
+.cta .c1{width:min(50vw,420px);aspect-ratio:1;background:var(--orange);left:-12%;bottom:-40%}
+.cta .c2{width:min(34vw,280px);aspect-ratio:1;background:var(--pale);right:-8%;top:-30%;opacity:.6;animation-delay:-4s}
 
 /* ---------- 13. FOOTER ---------- */
-footer{background:#101010;padding:70px 0 30px;border-top:1px solid #2e2e2e}
-.fg{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:36px}
-footer .fg>div:first-child>a{display:inline-block;margin-bottom:12px}
-footer img{width:200px;height:auto;aspect-ratio:768/488;object-fit:contain;display:block}
-footer h3{font-size:1rem;color:var(--amber);font-family:inherit}
-footer ul{list-style:none;padding:0;margin:0}
-footer li{margin:7px 0;font-size:.92rem;opacity:.85}
-footer li a:hover{color:var(--amber)}
-.soc{display:flex;gap:10px;margin-top:14px}
-.soc a{width:40px;height:40px;display:grid;place-items:center;border-radius:50%;border:1px solid #555;transition:.25s}
-.soc a:hover{background:var(--amber);color:var(--ch);border-color:var(--amber);transform:translateY(-3px)}
-.soc svg{width:18px;height:18px;fill:currentColor}
-.bot{border-top:1px solid #2e2e2e;margin-top:40px;padding-top:20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.85rem;opacity:.8}
-@media(max-width:800px){.fg{grid-template-columns:1fr 1fr}}
-@media(max-width:520px){.fg{grid-template-columns:1fr}}
+footer{background:var(--ink);color:var(--cream);padding-block:4rem 1.5rem}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:2rem}
+footer h3{font-size:1rem;margin-bottom:1rem;color:var(--pale)}
+footer ul{list-style:none;padding:0;display:grid;gap:.5rem}
+footer a{text-decoration:none;opacity:.85}
+footer a:hover{opacity:1;text-decoration:underline}
+footer .tagline{font-family:var(--display);font-weight:800;font-size:1.2rem;margin:.8rem 0 .5rem}
+footer p{max-width:36ch;opacity:.85}
+.socials{display:flex;gap:1rem;margin-top:.8rem;flex-wrap:wrap}
+.bottom{margin-top:3rem;padding-top:1.2rem;border-top:1px solid rgba(255,249,240,.2);display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;justify-content:space-between;font-size:.9rem}
+.bottom nav{display:flex;gap:1.2rem}
+@media(max-width:900px){.fgrid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.fgrid{grid-template-columns:1fr}}
 
 /* ---------- 14. ANIMATIONS ---------- */
-@keyframes pageIn{from{opacity:0;transform:translateY(8px)}}
-@keyframes float{50%{transform:translateY(-24px) rotate(8deg)}}
-.rv{opacity:0;transform:translateY(28px);transition:opacity .8s,transform .8s;transition-delay:var(--d,0s)}   /* scroll reveal */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease;transition-delay:calc(var(--i,0)*90ms)}
 .rv.in{opacity:1;transform:none}
+@keyframes rise{to{transform:none}}
+@keyframes fadeIn{to{opacity:1}}
+@keyframes reveal{to{clip-path:inset(0)}}
+@keyframes float{50%{transform:translateY(-14px) rotate(4deg)}}
+@keyframes scroll{to{transform:translateX(-50%)}}
+@keyframes pulse{50%{opacity:.35}}
 
-/* ---------- 15. ACCESSIBILITY ---------- */
-a:focus-visible,button:focus-visible{outline:3px solid var(--lav);outline-offset:3px}
+/* ---------- 15. REDUCED MOTION ---------- */
 @media(prefers-reduced-motion:reduce){
-  *,*::before,*::after{animation:none!important;transition:none!important}
-  .rv{opacity:1;transform:none} html{scroll-behavior:auto}
-}
-      /* MOBILE RESPONSIVE FIX */
-
-/* MOBILE RESPONSIVE FIX */
-@media (max-width: 700px) {
-
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-  }
-
-  html,
-  body {
-    width: 100%;
-    max-width: 100%;
-    min-width: 0;
-    margin: 0;
-    overflow-x: clip;
-  }
-
-  main,
-  header,
-  footer,
-  section {
-    width: 100%;
-    max-width: 100%;
-    min-width: 0;
-  }
-
-  .wrap {
-    width: 100%;
-    max-width: 1180px;
-    min-width: 0;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-
-  section {
-    padding: 64px 0;
-  }
-
-  /* Header */
-  .nav {
-    width: 100%;
-    height: 76px;
-    gap: 10px;
-  }
-
-  .logo img {
-    height: 50px;
-    width: auto;
-  }
-
-  .burger {
-    display: block;
-    flex: 0 0 46px;
-  }
-
-  .nav > .btn {
-    display: none;
-  }
-
-  /* Mobile navigation panel */
-  header nav {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: min(88vw, 340px);
-    max-width: 100%;
-    padding: 96px 24px 30px;
-    overflow-y: auto;
-    transform: translateX(105%);
-  }
-
-  header nav.o {
-    transform: translateX(0);
-  }
-
-  header nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 14px;
-  }
-
-  /* Hero */
-  .hero {
-    width: 100%;
-    min-height: auto;
-    padding: 120px 0 70px;
-  }
-
-  .hero .wrap {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .hero h1 {
-    font-size: clamp(2.25rem, 9vw, 3.5rem);
-    overflow-wrap: break-word;
-  }
-
-  .hero p {
-    width: 100%;
-    max-width: 100%;
-    font-size: 1rem;
-  }
-
-  /* Buttons */
-  .btns {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    gap: 12px;
-  }
-
-  .btns .btn {
-    max-width: 100%;
-    text-align: center;
-    padding: 12px 18px;
-  }
-
-  /* Content layouts */
-  .split {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 30px;
-  }
-
-  .grid {
-    width: 100%;
-    grid-template-columns: minmax(0, 1fr);
-    gap: 18px;
-  }
-
-  .card {
-    width: 100%;
-    min-width: 0;
-    padding: 24px;
-  }
-
-  .pj {
-    width: 100%;
-    min-width: 0;
-  }
-
-  /* Process timeline */
-  .proc {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 34px;
-  }
-
-  .line {
-    top: 29px;
-    bottom: 29px;
-    left: 28px;
-    right: auto;
-    width: 3px;
-    height: auto;
-  }
-
-  .line::after {
-    right: auto;
-    left: -5px;
-    top: auto;
-    bottom: -7px;
-  }
-
-  .fill {
-    width: 100%;
-    height: calc(var(--p) * 100%);
-  }
-
-  .st {
-    text-align: left;
-    padding-left: 80px;
-  }
-
-  .st b {
-    position: absolute;
-    left: 0;
-    top: 0;
-    margin: 0;
-  }
-
-  /* Footer */
-  .fg {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 28px;
-  }
-
-  .bot {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  /* Decorative elements */
-  .o1 {
-    width: 250px;
-    height: 250px;
-    opacity: .3;
-  }
-
-  .cube {
-    display: none;
-  }
-}
-      /* MOBILE NAVIGATION MENU FIX */
-@media (max-width: 1060px) {
-
-  header nav#nav {
-    position: fixed !important;
-    inset: 0 0 0 auto !important;
-    width: min(88vw, 340px) !important;
-    height: 100vh !important;
-    height: 100dvh !important;
-    min-height: 100vh;
-    background: #171717 !important;
-    z-index: 1000 !important;
-    padding: 100px 26px 30px !important;
-    overflow-y: auto !important;
-    transform: translateX(105%);
-    transition: transform .4s ease;
-  }
-
-  header nav#nav.o {
-    transform: translateX(0) !important;
-  }
-
-  header nav#nav ul {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: flex-start !important;
-    justify-content: flex-start !important;
-    gap: 18px !important;
-    width: 100%;
-  }
-
-  header nav#nav ul li {
-    display: block !important;
-    width: 100%;
-  }
-
-  header nav#nav ul li a {
-    display: block !important;
-    color: #F0EFD0 !important;
-    font-size: 17px;
-  }
-
-  header nav#nav .mq {
-    display: block !important;
-    margin-top: 25px;
-  }
-}
-      /* FULL HEIGHT MOBILE NAVIGATION */
-@media (max-width: 1060px) {
-
-  header nav#nav {
-    position: fixed !important;
-    top: 0 !important;
-    right: 0 !important;
-    bottom: 0 !important;
-
-    width: min(88vw, 340px) !important;
-    height: 100vh !important;
-    height: 100dvh !important;
-    max-height: 100dvh !important;
-
-    overflow-y: auto !important;
-    overflow-x: hidden !important;
-
-    padding: 100px 26px 35px !important;
-    box-sizing: border-box !important;
-  }
-
-  header nav#nav ul {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: flex-start !important;
-    justify-content: flex-start !important;
-    gap: 16px !important;
-    width: 100% !important;
-  }
-
-  header nav#nav ul li {
-    width: 100% !important;
-  }
-
-  header nav#nav ul li a {
-    font-size: 17px !important;
-    padding: 5px 0 !important;
-  }
-}
-      /* MOBILE NAVIGATION FINAL SPACING & CLOSE BUTTON FIX */
-@media (max-width: 1060px) {
-
-  header {
-    z-index: 1200 !important;
-  }
-
-  header nav#nav {
-    top: 0 !important;
-    right: 0 !important;
-    bottom: 0 !important;
-
-    height: 100vh !important;
-    height: 100dvh !important;
-
-    padding: 65px 24px 30px !important;
-    overflow-y: auto !important;
-
-    z-index: 1200 !important;
-  }
-
-  /* Close button always visible */
-  header .burger {
-    position: fixed !important;
-    top: 12px !important;
-    right: 20px !important;
-    z-index: 1300 !important;
-
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
-  }
-
-  /* Navigation spacing */
-  header nav#nav ul {
-    gap: 12px !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-
-  header nav#nav ul li a {
-    padding: 5px 0 !important;
-  }
-}
-      /* MOBILE HAMBURGER ICON VISIBILITY FIX */
-@media (max-width: 1060px) {
-
-  header .nav {
-    position: relative !important;
-  }
-
-  header .burger {
-    position: absolute !important;
-    top: 50% !important;
-    right: 16px !important;
-    transform: translateY(-50%) !important;
-
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
-
-    width: 46px !important;
-    height: 46px !important;
-    padding: 10px !important;
-
-    background: transparent !important;
-    border: 1px solid rgba(240,239,208,.3) !important;
-    border-radius: 10px !important;
-
-    z-index: 1500 !important;
-    cursor: pointer;
-  }
-
-  header .burger span {
-    display: block !important;
-    width: 23px !important;
-    height: 2px !important;
-    min-height: 2px !important;
-    background: #F0EFD0 !important;
-    border-radius: 5px !important;
-    opacity: 1 !important;
-  }
+ *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+ .rv,.fade{opacity:1;transform:none}
+ .hero h1 .w b{transform:none}
+ .portrait .frame{clip-path:none}
+ .steps .bar{transform:none!important}
+ .track{animation:none}
 }
 </style>
 </head>
+
 <body>
 
-<!-- ================================================================
-     01. HEADER & NAVIGATION  — logo · links · Games dropdown · Get a Quote
-     (no social icons here — they live in the footer only)
-     ================================================================ -->
-<header>
-  <div class="wrap nav">
-    <a class="logo" href="/" aria-label="Digital Vishu Agency – Home"><img src="favicon.webp" width="101" height="64" alt="Digital Vishu Agency official logo"></a>
-    <nav id="nav" aria-label="Main">
-      <ul>
-        <li><a class="l" href="/" aria-current="page">Home</a></li>
-        <li><a class="l" href="/about/">About Us</a></li>
-        <li><a class="l" href="/services/">Services</a></li>
-        <li><a class="l" href="/portfolio/">Portfolio</a></li>
-        <li><a class="l" href="/case-studies/">Case Studies</a></li>
-        <li><a class="l" href="/blog/">Blog</a></li>
-        <li><a class="l" href="/contact/">Contact Us</a></li>
-      </ul>
-      <div class="mq">
-        <a href="/" aria-label="Digital Vishu Agency – Home"><img src="favicon.webp" width="150" height="95" alt="Digital Vishu Agency official logo"></a><a class="btn" href="/get-a-quote/">Get a Quote</a>
-      </div>
-    </nav>
-    <a class="btn" href="/get-a-quote/">Get a Quote</a><button class="burger" id="bg" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
-  </div>
+<!-- ============================ HTML ============================ -->
+
+<!-- 1. HEADER -->
+<header class="site-header" id="top">
+ <div class="wrap nav">
+  <!-- LOGO: replace the text with <img src="logo.svg" alt="Digital Vishu Agency"> (PNG/SVG both work) -->
+  <a class="logo" href="#home" aria-label="Digital Vishu Agency home" id="logo">DIGITAL VISHU</a>
+  <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  <ul class="menu" id="menu">
+   <li><a href="#home">Home</a></li>
+   <li><a href="#about">About</a></li>
+   <li><a href="#services">Services</a></li>
+   <li><a href="#portfolio">Portfolio</a></li>
+   <li><a href="#contact">Contact</a></li>
+   <li><a class="btn btn-fill" href="#contact">Get a Quote</a></li>
+  </ul>
+ </div>
 </header>
 
 <main>
+<!-- 2. HERO -->
+<section class="hero" id="home">
+ <div class="wrap">
+  <div>
+   <span class="badge fade" style="--d:.1s"><i></i>AVAILABLE FOR NEW PROJECTS</span>
+   <h1 aria-label="We build brands. We drive growth." id="h1">We build brands. We drive growth.</h1>
+   <p class="fade" style="--d:.9s">Helping businesses build a powerful online presence through strategic digital marketing, creative websites and data-driven solutions.</p>
+   <p class="who fade" style="--d:1.05s">Hi, I'm Vishal Thapa — Founder of Digital Vishu Agency, based in Kotdwar, Uttarakhand.</p>
+   <div class="cta-row fade" style="--d:1.2s">
+    <a class="btn btn-fill" href="#contact">Let's Work Together</a>
+    <a class="btn btn-line" href="#portfolio">Explore Our Work</a>
+   </div>
+  </div>
+  <div class="portrait">
+   <div class="frame">
+    <!-- PORTRAIT: add <img src="vishal.jpg" alt="Vishal Thapa, founder of Digital Vishu Agency" width="460" height="575"> here -->
+    <div class="ph">Founder portrait<small>Replace with Vishal's photo (4:5)</small></div>
+   </div>
+   <span class="shape s1"></span><span class="shape s2"></span><span class="shape s3"></span>
+   <span class="tag t1">SEO</span><span class="tag t2">Digital Marketing</span><span class="tag t3">Web Development</span>
+  </div>
+ </div>
+</section>
 
-<!-- ================================================================
-     02. HERO
-     ================================================================ -->
-    <section class="hero">
-      <div class="orb o1">
-      </div>
-      <div class="orb o2">
-      </div>
-      <div class="orb o3">
-      </div>
-      <div class="cube">
-      </div>
-      <div class="wrap">
-        <span class="eyebrow rv">DIGITAL VISHU AGENCY</span>
-        <h1 class="rv" style="--d:.1s">We Build Brands.<br><em>We Drive Growth.</em></h1>
-        <p class="rv" style="--d:.2s">Digital Vishu Agency helps businesses grow online through strategic marketing, creative branding, and modern digital experiences.</p>
-        <div class="btns rv" style="--d:.3s">
-          <a class="btn" href="/services/">Explore Our Services</a><a class="btn ghost" href="/get-a-quote/">Get a Quote</a>
-        </div>
-      </div>
-    </section>
+<!-- 3. MARQUEE -->
+<div class="marquee" aria-hidden="true"><div class="track" id="track"></div></div>
 
-<!-- ================================================================
-     03. WHAT WE DO
-     ================================================================ -->
-    <section>
-      <div class="wrap">
-        <h2 class="rv">Your Growth. Our Digital Expertise.</h2>
-        <p class="lead rv">We combine strategy, creativity, and technology to help businesses establish a stronger digital presence.</p>
-        <div class="grid">
-          <article class="card rv" style="--d:0.0s">
-            <div class="ic">
-              📈
-            </div>
-            <h3>Digital Marketing</h3>
-            <p>SEO, social media and paid campaigns built around your goals.</p>
-            <a class="more" href="/services/">Learn More →</a>
-          </article>
-          <article class="card rv" style="--d:0.1s">
-            <div class="ic">
-              🎨
-            </div>
-            <h3>Creative & Branding</h3>
-            <p>Identities and visuals that make your brand easy to remember.</p>
-            <a class="more" href="/services/">Learn More →</a>
-          </article>
-          <article class="card rv" style="--d:0.2s">
-            <div class="ic">
-              💻
-            </div>
-            <h3>Website & Digital Experiences</h3>
-            <p>Fast, responsive sites designed to turn visitors into enquiries.</p>
-            <a class="more" href="/services/">Learn More →</a>
-          </article>
-        </div>
-      </div>
-    </section>
+<!-- 4. INTRO -->
+<section class="intro">
+ <div class="wrap">
+  <h2 class="rv">Your growth partner in the digital world.</h2>
+  <p class="lead rv">Digital Vishu Agency helps businesses strengthen their digital presence through strategic marketing, creative thinking and practical digital solutions. Our approach is simple: understand your business, build the right strategy and execute with purpose.</p>
+  <div class="cols">
+   <div class="col rv" style="--i:0"><span class="num">01</span><h3>Strategy First</h3><p>Understand the business, target audience and objectives before creating a strategy.</p></div>
+   <div class="col rv" style="--i:1"><span class="num">02</span><h3>Creative Execution</h3><p>Build meaningful digital experiences, campaigns and online brand identities.</p></div>
+   <div class="col rv" style="--i:2"><span class="num">03</span><h3>Continuous Improvement</h3><p>Analyze, learn and improve digital performance through consistent optimization.</p></div>
+  </div>
+ </div>
+</section>
 
-<!-- ================================================================
-     04. ABOUT DIGITAL VISHU
-     ================================================================ -->
-    <section class="alt">
-      <div class="wrap split">
-        <div class="rv">
-          <span class="eyebrow">ABOUT DIGITAL VISHU</span>
-          <h2>More Than an Agency. Your Growth Partner.</h2>
-          <p>Digital Vishu Agency is built around a simple idea: every business deserves a powerful digital presence. We combine creative thinking, strategic planning, and modern technology to help brands move forward.</p>
-          <div class="tags">
-            <span><b style="color:var(--amber)">Vision</b> · Meaningful digital identities for every business</span><span><b style="color:var(--amber)">Mission</b> · Smart marketing and creative solutions that drive growth</span>
-          </div>
-          <h3 style="color:var(--amber)">Vishal Thapa</h3>
-          <p style="margin:0"><strong>Founder &amp; Digital Marketer</strong></p>
-          <p>Founded by Vishal Thapa, Digital Vishu Agency aims to help businesses build meaningful digital identities and grow through smart marketing and creative solutions.</p>
-          <a class="btn" href="/about/">Discover Our Story</a>
-        </div>
-        <div class="ph rv" style="--d:.15s" role="img" aria-label="Placeholder for founder photo of Vishal Thapa">
-          <div>
-            <div style="font-size:3rem">
-              📷
-            </div>
-            <p>Founder photo placeholder<br><small>Replace with a photo of Vishal Thapa</small></p>
-          </div>
-        </div>
-      </div>
-    </section>
+<!-- 5. SERVICES (cards are built by JS from the SERVICES list) -->
+<section class="services" id="services">
+ <div class="wrap">
+  <h2 class="rv">What we do best.</h2>
+  <p class="lead rv">Digital solutions designed to strengthen your brand and support sustainable business growth.</p>
+  <div class="grid8" id="serviceGrid"></div>
+ </div>
+</section>
 
-<!-- ================================================================
-     05. OUR SERVICES
-     ================================================================ -->
-    <section>
-      <div class="wrap">
-        <h2 class="rv">Everything Your Brand Needs to Grow.</h2>
-        <div class="grid">
-          <article id="seo" class="card rv" style="--d:0.0s">
-            <div class="ic">
-              📈
-            </div>
-            <h3>SEO</h3>
-            <p>Improve your website's visibility and build a stronger organic presence through strategic SEO.</p>
-            <a class="more" href="/services/#seo">Learn More →</a>
-          </article>
-          <article id="social-media" class="card rv" style="--d:0.1s">
-            <div class="ic">
-              📱
-            </div>
-            <h3>Social Media Marketing</h3>
-            <p>Build your brand identity, connect with your audience, and grow your social presence.</p>
-            <a class="more" href="/services/#social-media">Learn More →</a>
-          </article>
-          <article id="website-development" class="card rv" style="--d:0.2s">
-            <div class="ic">
-              💻
-            </div>
-            <h3>Website Development</h3>
-            <p>Create modern, responsive, and user-friendly websites that represent your business.</p>
-            <a class="more" href="/services/#website-development">Learn More →</a>
-          </article>
-          <article id="branding" class="card rv" style="--d:0.0s">
-            <div class="ic">
-              🎨
-            </div>
-            <h3>Branding & Graphic Design</h3>
-            <p>Build a memorable brand identity through creative visuals and consistent design.</p>
-            <a class="more" href="/services/#branding">Learn More →</a>
-          </article>
-          <article id="content-marketing" class="card rv" style="--d:0.1s">
-            <div class="ic">
-              ✍️
-            </div>
-            <h3>Content Marketing</h3>
-            <p>Create meaningful content that informs your audience and supports business growth.</p>
-            <a class="more" href="/services/#content-marketing">Learn More →</a>
-          </article>
-          <article id="ads" class="card rv" style="--d:0.2s">
-            <div class="ic">
-              🎯
-            </div>
-            <h3>Paid Advertising</h3>
-            <p>Reach the right audience through strategic Google Ads and Meta Ads campaigns.</p>
-            <a class="more" href="/services/#ads">Learn More →</a>
-          </article>
-        </div>
-        <div class="btns">
-          <a class="btn" href="/services/">Explore All Services</a>
-        </div>
-      </div>
-    </section>
+<!-- 6. WHY US -->
+<section class="why">
+ <div class="wrap">
+  <h2 class="rv">Small details. Smart strategies. Real growth.</h2>
+  <div class="grid4">
+   <div class="item rv" style="--i:0"><h3>Personalized Strategies</h3><p>Every business has different goals. Develop strategies according to individual requirements.</p></div>
+   <div class="item rv" style="--i:1"><h3>Transparent Communication</h3><p>Maintain clear communication throughout the project.</p></div>
+   <div class="item rv" style="--i:2"><h3>Practical Execution</h3><p>Focus on useful solutions and meaningful implementation.</p></div>
+   <div class="item rv" style="--i:3"><h3>Continuous Optimization</h3><p>Review performance and identify opportunities for improvement.</p></div>
+  </div>
+ </div>
+</section>
 
-<!-- ================================================================
-     06. FEATURED PORTFOLIO
-     ================================================================ -->
-    <section class="alt">
-      <div class="wrap">
-        <h2 class="rv">Creative Work. Meaningful Experiences.</h2>
-        <p class="lead rv">These are demo concepts, not completed client work. Real projects will be added as they are published.</p>
-        <div class="grid">
-          <a class="pj rv" href="/portfolio/" style="--d:0.0s" aria-label="Demo: Business Website">
-          <div class="bg" style="background:linear-gradient(135deg,#FFBF00,#CFB53B)">
-          </div>
-          <div class="ov">
-            <small>WEBSITE DESIGN</small>
-            <h3 style="margin:4px 0">Demo: Business Website</h3>
-            <span class="demo">Demo concept, not client work · View Project →</span>
-          </div>
-          </a><a class="pj rv" href="/portfolio/" style="--d:0.1s" aria-label="Demo: SEO Reporting Concept">
-          <div class="bg" style="background:linear-gradient(135deg,#E0B0FF,#9b6fd1)">
-          </div>
-          <div class="ov">
-            <small>SEO</small>
-            <h3 style="margin:4px 0">Demo: SEO Reporting Concept</h3>
-            <span class="demo">Demo concept, not client work · View Project →</span>
-          </div>
-          </a><a class="pj rv" href="/portfolio/" style="--d:0.2s" aria-label="Demo: Social Campaign">
-          <div class="bg" style="background:linear-gradient(135deg,#CFB53B,#6b5a10)">
-          </div>
-          <div class="ov">
-            <small>SOCIAL MEDIA</small>
-            <h3 style="margin:4px 0">Demo: Social Campaign</h3>
-            <span class="demo">Demo concept, not client work · View Project →</span>
-          </div>
-          </a>
-        </div>
-        <div class="btns">
-          <a class="btn" href="/portfolio/">View All Projects</a>
-        </div>
-      </div>
-    </section>
+<!-- 7. PORTFOLIO -->
+<section id="portfolio">
+ <div class="wrap">
+  <h2 class="rv">Work that speaks for itself.</h2>
+  <p class="lead rv">Explore selected websites and digital projects.</p>
+  <div class="grid3">
+   <article class="proj rv" style="--i:0">
+    <div class="shot"><!-- SCREENSHOT: <img src="img/vishuparadise.jpg" alt="Vishu Paradise website" loading="lazy"> --><div class="ph">Vishu Paradise<small>Add website screenshot</small></div></div>
+    <span class="cat">Personal Website / Digital Presence</span><h3>Vishu Paradise</h3>
+    <p>A personal digital platform showcasing professional identity, skills and online presence.</p>
+    <a class="link" href="https://vishuparadise.site/" target="_blank" rel="noopener">View Project: Vishu Paradise</a>
+   </article>
+   <article class="proj rv" style="--i:1">
+    <div class="shot"><!-- SCREENSHOT: <img src="img/fitnesstemple.jpg" alt="Fitness Temple Gym website" loading="lazy"> --><div class="ph">Fitness Temple Gym<small>Add website screenshot</small></div></div>
+    <span class="cat">Gym Website / Website Development</span><h3>Fitness Temple Gym</h3>
+    <p>A digital platform for a local fitness business, designed to showcase its services, facilities and contact information.</p>
+    <a class="link" href="https://fitnesstemple.fit/" target="_blank" rel="noopener">View Project: Fitness Temple Gym</a>
+   </article>
+   <article class="proj rv" style="--i:2">
+    <div class="shot"><!-- SCREENSHOT: <img src="img/digitalvishu.jpg" alt="Digital Vishu Agency website" loading="lazy"> --><div class="ph">Digital Vishu Agency<small>Add website screenshot</small></div></div>
+    <span class="cat">Agency Website / Branding</span><h3>Digital Vishu Agency</h3>
+    <p>The official digital platform of Digital Vishu Agency.</p>
+    <a class="link" href="https://digitalvishu.website/" target="_blank" rel="noopener">View Project: Digital Vishu Agency</a>
+   </article>
+  </div>
+ </div>
+</section>
 
-<!-- ================================================================
-     07. CASE STUDIES
-     ================================================================ -->
-    <section>
-      <div class="wrap">
-        <h2 class="rv">Strategy in Action.</h2>
-        <p class="lead rv">Sample layout only. Real case studies will appear here once results are verified.</p>
-        <div class="grid">
-          <article class="card rv" style="--d:0.0s">
-            <div class="cimg" role="img" aria-label="Placeholder project image">
-            </div>
-            <span class="eyebrow">SAMPLE LAYOUT · CATEGORY</span>
-            <h3>Overview &amp; Challenge</h3>
-            <p>[Project overview]<br>[Business challenge]</p>
-          </article>
-          <article class="card rv" style="--d:0.1s">
-            <div class="cimg" role="img" aria-label="Placeholder project image">
-            </div>
-            <span class="eyebrow">SAMPLE LAYOUT · CATEGORY</span>
-            <h3>Strategy &amp; Execution</h3>
-            <p>[Chosen strategy]<br>[What was delivered]</p>
-          </article>
-          <article class="card rv" style="--d:0.2s">
-            <div class="cimg" role="img" aria-label="Placeholder project image">
-            </div>
-            <span class="eyebrow">SAMPLE LAYOUT · CATEGORY</span>
-            <h3>Results</h3>
-            <p>[Verified results, added only when real and approved]</p>
-          </article>
-        </div>
-        <div class="btns">
-          <a class="btn" href="/case-studies/">Explore Case Studies</a>
-        </div>
-      </div>
-    </section>
+<!-- 8. FOUNDER -->
+<section class="about" id="about">
+ <span class="orb"></span>
+ <div class="wrap">
+  <div class="portrait rv">
+   <div class="frame"><!-- PORTRAIT: <img src="vishal.jpg" alt="Vishal Thapa" loading="lazy"> --><div class="ph">Founder photo<small>Replace with real photograph</small></div></div>
+  </div>
+  <div>
+   <h2 class="rv">Meet the mind behind Digital Vishu.</h2>
+   <p class="name rv" style="--i:1">Vishal Thapa</p>
+   <p class="meta rv" style="--i:1">Founder &amp; Digital Marketer · Kotdwar, Uttarakhand</p>
+   <p class="lead rv" style="--i:2">I'm Vishal Thapa, a digital marketer from Kotdwar, Uttarakhand. My journey into digital marketing began with curiosity about how businesses grow online. Through learning, practical projects and professional experience, I continue developing my skills in SEO, digital marketing and website development.</p>
+   <div class="cta-row rv" style="--i:3"><a class="btn btn-fill" href="#journey">More About Me</a></div>
+  </div>
+ </div>
+</section>
 
-<!-- ================================================================
-     08. WHY CHOOSE US
-     ================================================================ -->
-    <section class="alt">
-      <div class="wrap">
-        <h2 class="rv">Why Brands Choose Digital Vishu.</h2>
-        <div class="grid">
-          <div class="card rv" style="--d:0.0s">
-            <div class="ic">
-              🧭
-            </div>
-            <h3>Strategy Before Execution</h3>
-          </div>
-          <div class="card rv" style="--d:0.1s">
-            <div class="ic">
-              ✨
-            </div>
-            <h3>Creative & Modern Approach</h3>
-          </div>
-          <div class="card rv" style="--d:0.2s">
-            <div class="ic">
-              📊
-            </div>
-            <h3>Data-Driven Decisions</h3>
-          </div>
-          <div class="card rv" style="--d:0.0s">
-            <div class="ic">
-              🤝
-            </div>
-            <h3>Client-Focused Solutions</h3>
-          </div>
-          <div class="card rv" style="--d:0.1s">
-            <div class="ic">
-              💬
-            </div>
-            <h3>Transparent Communication</h3>
-          </div>
-          <div class="card rv" style="--d:0.2s">
-            <div class="ic">
-              🚀
-            </div>
-            <h3>Growth-Oriented Thinking</h3>
-          </div>
-        </div>
-      </div>
-    </section>
+<!-- 9. LEARNING JOURNEY -->
+<section class="journey" id="journey">
+ <div class="wrap">
+  <h2 class="rv">My learning journey.</h2>
+  <div class="steps"><span class="bar"></span>
+   <div class="step rv" style="--i:0"><h3>Tutedude</h3><p>Completed an online digital marketing course.</p></div>
+   <div class="step rv" style="--i:1"><h3>Morzo Group — Kotdwar</h3><p>Completed an offline digital marketing course.</p></div>
+   <div class="step rv" style="--i:2"><h3>Skyrise Journeys — Dehradun</h3><p>Completed a three-month SEO internship.</p><small>13 August 2026 – 13 November 2026</small></div>
+  </div>
+ </div>
+</section>
 
-<!-- ================================================================
-    
+<!-- 10. PROCESS -->
+<section class="process">
+ <div class="wrap">
+  <h2 class="rv">A simple process. A smarter approach.</h2>
+  <div class="steps"><span class="bar"></span>
+   <div class="step rv" style="--i:0"><div class="big">01</div><h3>Discover</h3><p>Understand the business, audience, requirements and goals.</p></div>
+   <div class="step rv" style="--i:1"><div class="big">02</div><h3>Strategize</h3><p>Develop a practical digital strategy based on project requirements.</p></div>
+   <div class="step rv" style="--i:2"><div class="big">03</div><h3>Execute</h3><p>Implement the planned marketing or website solutions.</p></div>
+   <div class="step rv" style="--i:3"><div class="big">04</div><h3>Optimize</h3><p>Review performance and identify opportunities for improvement.</p></div>
+  </div>
+ </div>
+</section>
 
-<!-- ================================================================
-     10. OUR PROCESS — FROM VISION TO GROWTH
-     ================================================================ -->
-    <section class="alt" id="process">
-      <div class="wrap">
-        <h2 class="rv">From Vision to Growth.</h2>
-        <div class="proc" id="proc" role="list">
-          <div class="line" aria-hidden="true">
-            <i class="fill"></i>
-          </div>
-          <div class="st on" role="listitem">
-            <b>01</b>
-            <h3>Discover</h3>
-            <p>Understand the business, goals, and audience.</p>
-          </div>
-          <div class="st" role="listitem">
-            <b>02</b>
-            <h3>Plan</h3>
-            <p>Develop the right strategy and direction.</p>
-          </div>
-          <div class="st" role="listitem">
-            <b>03</b>
-            <h3>Create</h3>
-            <p>Build, design, and execute the solution.</p>
-          </div>
-          <div class="st" role="listitem">
-            <b>04</b>
-            <h3>Optimize</h3>
-            <p>Analyze performance and improve continuously.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+<!-- 11. FAQ -->
+<section class="faq">
+ <div class="wrap">
+  <h2 class="rv">Frequently asked questions.</h2>
+  <div class="list" id="faq"></div>
+ </div>
+</section>
 
-<!-- ================================================================
-     11. LATEST INSIGHTS / BLOG
-     ================================================================ -->
-    <section>
-      <div class="wrap">
-        <h2 class="rv">Insights That Move Businesses Forward.</h2>
-        <p class="lead rv">Placeholder articles until real posts are published.</p>
-        <div class="grid">
-          <article class="card bl rv" style="--d:0.0s">
-            <div class="bg" style="background:linear-gradient(135deg,#FFBF00,#CFB53B)" role="img" aria-label="Placeholder featured image for SEO article">
-            </div>
-            <span class="eyebrow">SEO</span>
-            <h3>Placeholder: SEO Basics for Local Businesses</h3>
-            <p>Sample excerpt to be replaced when a real article is published.</p>
-            <a class="more" href="/blog/">Read More →</a>
-          </article>
-          <article class="card bl rv" style="--d:0.1s">
-            <div class="bg" style="background:linear-gradient(135deg,#E0B0FF,#9b6fd1)" role="img" aria-label="Placeholder featured image for DIGITAL MARKETING article">
-            </div>
-            <span class="eyebrow">DIGITAL MARKETING</span>
-            <h3>Placeholder: Planning a Content Calendar</h3>
-            <p>Sample excerpt to be replaced when a real article is published.</p>
-            <a class="more" href="/blog/">Read More →</a>
-          </article>
-          <article class="card bl rv" style="--d:0.2s">
-            <div class="bg" style="background:linear-gradient(135deg,#CFB53B,#6b5a10)" role="img" aria-label="Placeholder featured image for BUSINESS GROWTH article">
-            </div>
-            <span class="eyebrow">BUSINESS GROWTH</span>
-            <h3>Placeholder: Building a Brand That Lasts</h3>
-            <p>Sample excerpt to be replaced when a real article is published.</p>
-            <a class="more" href="/blog/">Read More →</a>
-          </article>
-        </div>
-        <div class="btns">
-          <a class="btn" href="/blog/">Explore All Insights</a>
-        </div>
-      </div>
-    </section>
-
-<!-- ================================================================
-     12. FINAL CTA
-     ================================================================ -->
-    <section class="cta2">
-      <div class="wrap">
-        <h2 class="rv">Ready to Grow Your Business?</h2>
-        <p class="rv">Let's build something meaningful for your brand. Tell us about your project and discover how Digital Vishu Agency can help.</p>
-        <div class="btns rv" style="justify-content:center">
-          <a class="btn" href="/get-a-quote/">Get a Quote</a>
-        </div>
-      </div>
-    </section>
-
+<!-- 12. FINAL CTA (also the #contact anchor) -->
+<section class="cta" id="contact">
+ <span class="c1"></span><span class="c2"></span>
+ <div class="wrap">
+  <h2 class="rv">Let's grow your business together.</h2>
+  <p class="lead rv">Have an idea, a business or a project in mind? Let's discuss how the right digital strategy can help you move forward.</p>
+  <div class="cta-row rv">
+   <a class="btn btn-fill" data-mail="Quote request" href="#contact">Get a Quote</a>
+   <a class="btn btn-line" data-mail="Enquiry" href="#contact">Contact Us</a>
+  </div>
+  <p class="lead rv" id="mailNote" style="font-size:.95rem"></p>
+ </div>
+</section>
 </main>
 
-<!-- ================================================================
-     13. FOOTER  — logo · quick links · explore · contact · social icons
-     ================================================================ -->
+<!-- 13. FOOTER -->
 <footer>
-  <div class="wrap">
-    <div class="fg">
-      <div>
-        <a href="/" aria-label="Digital Vishu Agency – Home"><img src="favicon.webp" width="180" height="114" alt="Digital Vishu Agency official logo"></a>
-        <p>We Build Brands. We Drive Growth.</p>
-        <div class="soc">
-          <a href="https://youtube.com/@vishu-paradise?si=BysnoKHs9nsfDANc" target="_blank" rel="noopener noreferrer" aria-label="Digital Vishu on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM9.6 15.6V8.4l6.2 3.6z"/></svg></a><a href="https://www.instagram.com/vishu.paradise/?__pwa=1" target="_blank" rel="noopener noreferrer" aria-label="Digital Vishu on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM17.4 5.6a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2z"/></svg></a><a href="https://www.linkedin.com/in/vishal-thapa-94765a428?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" aria-label="Digital Vishu on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.1 2.1 2.1 0 0 1 0 4.1zM7.1 20.5H3.6V9h3.6v11.5z"/></svg></a>
-        </div>
-      </div>
-      <div>
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about/">About Us</a></li>
-          <li><a href="/services/">Services</a></li>
-          <li><a href="/portfolio/">Portfolio</a></li>
-          <li><a href="/case-studies/">Case Studies</a></li>
-          <li><a href="/blog/">Blog</a></li>
-          <li><a href="/contact/">Contact Us</a></li>
-        </ul>
-      </div>
-      <div>
-        <h3>Contact</h3>
-        <ul>
-          <li>Kotdwara, Uttarakhand, India</li>
-          <li><a href="/contact/">Contact Us</a></li>
-          <li><a href="/get-a-quote/">Get a Quote</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="bot">
-      <span>© 2026 Digital Vishu Agency. All Rights Reserved.</span><span><a href="/privacy/">Privacy Policy</a> · <a href="/terms/">Terms &amp; Conditions</a></span>
-    </div>
+ <div class="wrap">
+  <div class="fgrid">
+   <div><a class="logo" href="#home">DIGITAL VISHU</a><p class="tagline">We Build Brands. We Drive Growth.</p><p>Creative digital solutions and strategic marketing for businesses looking to strengthen their online presence.</p></div>
+   <div><h3>Quick Links</h3><ul><li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#services">Services</a></li><li><a href="#portfolio">Portfolio</a></li><li><a href="#contact">Contact</a></li></ul></div>
+   <div><h3>Services</h3><ul><li><a href="#services">SEO</a></li><li><a href="#services">Google Ads</a></li><li><a href="#services">Meta Ads</a></li><li><a href="#services">Social Media Marketing</a></li><li><a href="#services">Website Development</a></li><li><a href="#services">WordPress Development</a></li></ul></div>
+   <div><h3>Contact</h3><ul><li>Kotdwar, Uttarakhand, India</li><li id="fMail"></li></ul><div class="socials" id="socials"></div></div>
   </div>
+  <div class="bottom">
+   <span>Copyright © 2026 Digital Vishu Agency. All Rights Reserved.</span>
+   <nav aria-label="Legal"><a href="#privacy" data-soon>Privacy Policy</a><a href="#terms" data-soon>Terms &amp; Conditions</a></nav>
+  </div>
+ </div>
 </footer>
 
-<!-- ================================================================
-     SCRIPT
-     ================================================================ -->
 <script>
-/* ==========================================================================
-   DIGITAL VISHU AGENCY — HOMEPAGE SCRIPT
-   01 Mobile menu · 02 Scroll reveal · 03 Page transition · 04 Process loop
-   ========================================================================== */
-(function () {
-  var reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+/* ==========================================================
+   JS — organised in the same order as the page
+   CONFIG · 1 Header · 2 Hero · 3 Marquee · 5 Services
+   11 FAQ · 12 Contact · 13 Footer · Scroll reveal
+   ========================================================== */
 
-  /* ---------- 01. MOBILE MENU ---------- */
-  var burger = document.getElementById("bg"), nav = document.getElementById("nav");
-  function toggleMenu(open) {
-    nav.classList.toggle("o", open);
-    burger.classList.toggle("o", open);
-    burger.setAttribute("aria-expanded", open);
-    burger.setAttribute("aria-label", open ? "Close menu" : "Open menu");
-  }
-  burger.addEventListener("click", function () { toggleMenu(!nav.classList.contains("o")); });
-  document.addEventListener("keydown", function (e) { if (e.key === "Escape") toggleMenu(false); });
+/* ---------- CONFIG: edit these, nothing else needs changing ---------- */
+const CONFIG = {
+  email: "",                       // e.g. "hello@digitalvishu.website"
+  socials: {                       // add full URLs; empty ones are hidden
+    YouTube: "", Instagram: "", LinkedIn: ""
+  },
+  privacyUrl: "", termsUrl: ""     // add when those pages exist
+};
 
-  /* ---------- 02. SCROLL REVEAL ---------- */
-  var io = new IntersectionObserver(function (entries) {
-    entries.forEach(function (x) {
-      if (x.isIntersecting) { x.target.classList.add("in"); io.unobserve(x.target); }
-    });
-  }, { threshold: 0.12 });
-  document.querySelectorAll(".rv").forEach(function (el) { io.observe(el); });
+const $ = (s, el = document) => el.querySelector(s);
+const $$ = (s, el = document) => [...el.querySelectorAll(s)];
 
-  /* ---------- 03. PAGE TRANSITION (fade out before opening another page) ---------- */
-  document.addEventListener("click", function (e) {
-    var a = e.target.closest("a");
-    if (!a || a.target || e.metaKey || e.ctrlKey || e.shiftKey || reduce) return;
-    var u = new URL(a.href, location.href);
-    if (u.origin !== location.origin || u.pathname === location.pathname) return;
-    e.preventDefault();
-    document.body.classList.add("out");
-    setTimeout(function () { location.href = a.href; }, 200);
-  });
-  window.addEventListener("pageshow", function () { document.body.classList.remove("out"); });
+/* ---------- 1. HEADER: sticky style, mobile menu, active link ---------- */
+const header = $('.site-header'), burger = $('.burger'), menu = $('#menu');
+addEventListener('scroll', () => header.classList.toggle('solid', scrollY > 20), { passive: true });
+burger.addEventListener('click', () => {
+  const open = menu.classList.toggle('open');
+  burger.setAttribute('aria-expanded', open);
+  burger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+});
+$$('#menu a').forEach(a => a.addEventListener('click', () => {
+  menu.classList.remove('open'); burger.setAttribute('aria-expanded', false);
+}));
+addEventListener('keydown', e => { if (e.key === 'Escape') { menu.classList.remove('open'); burger.setAttribute('aria-expanded', false); } });
+const spy = new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting) $$('#menu a').forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id));
+}), { rootMargin: '-45% 0px -50% 0px' });
+['home', 'about', 'services', 'portfolio', 'contact'].forEach(id => spy.observe($('#' + id)));
 
-  /* ---------- 04. PROCESS LOOP: Discover → Plan → Create → Optimize → repeat ---------- */
-  var proc = document.getElementById("proc");
-  if (proc) {
-    var steps = proc.querySelectorAll(".st"), index = 0, timer = null, inView = false;
-    function show(k) {
-      steps.forEach(function (s, j) { s.classList.toggle("on", j === k); });
-      proc.style.setProperty("--p", k / (steps.length - 1));        /* progress line */
-    }
-    if (reduce) {                                                    /* reduced motion: show all steps */
-      proc.classList.add("static");
-      steps.forEach(function (s) { s.classList.add("on"); });
-    } else {
-      function start() {
-        if (timer || !inView || document.hidden) return;
-        show(index);
-        timer = setInterval(function () { index = (index + 1) % steps.length; show(index); }, 1800);
-      }
-      function stop() { clearInterval(timer); timer = null; }       /* clean up timer */
-      new IntersectionObserver(function (es) {
-        inView = es[0].isIntersecting; inView ? start() : stop();
-      }, { threshold: 0.3 }).observe(proc);
-      document.addEventListener("visibilitychange", function () { document.hidden ? stop() : start(); });
-      window.addEventListener("pagehide", stop);
-    }
-  }
-})();
+/* ---------- 2. HERO: word-by-word headline ---------- */
+const h1 = $('#h1');
+h1.innerHTML = h1.textContent.split(' ').map((w, i) => `<span class="w" aria-hidden="true"><b style="--i:${i}">${w}</b></span> `).join('');
+
+/* ---------- 3. MARQUEE: two identical halves = seamless loop ---------- */
+const words = ['SEO', 'Digital Marketing', 'Google Ads', 'Meta Ads', 'Web Design', 'Brand Growth'];
+const half = words.map(w => `<span>${w}</span><span>✳</span>`).join('');
+$('#track').innerHTML = half + half + half + half;   /* 4 copies, animation moves 50% = 2 copies */
+
+/* ---------- 5. SERVICES ---------- */
+/* href: change to each service page (e.g. "/services/seo/") once it exists */
+const I = d => `<svg viewBox="0 0 48 48" aria-hidden="true"><path d="${d}"/></svg>`;
+const SERVICES = [
+  ['Search Engine Optimization (SEO)', 'Improve website visibility through keyword research, on-page SEO, technical SEO, content optimization and website analysis.', 'M21 8a13 13 0 1 0 0 26 13 13 0 0 0 0-26zM31 31l11 11'],
+  ['Google Ads', 'Create and manage targeted advertising campaigns to connect businesses with relevant audiences.', 'M24 6a18 18 0 1 0 0 36 18 18 0 0 0 0-36zM24 14a10 10 0 1 0 0 20 10 10 0 0 0 0-20zM24 22a2 2 0 1 0 0 4 2 2 0 0 0 0-4z'],
+  ['Meta Ads', 'Plan and manage advertising campaigns across Facebook and Instagram.', 'M6 28c0-12 6-18 11-18s9 12 14 12 11-4 11 6-5 12-10 12-9-12-14-12-12 6-12 0z'],
+  ['Social Media Marketing', 'Build a consistent social media presence through content planning, creative posts and audience engagement.', 'M8 10h32v22H20l-10 8v-8H8zM16 18h16M16 25h10'],
+  ['Website Development', 'Create modern, responsive and user-friendly websites for businesses and personal brands.', 'M6 8h36v28H6zM6 16h36M18 42h12M24 36v6'],
+  ['WordPress Development', 'Build and customize WordPress websites with attention to performance, usability and functionality.', 'M24 6a18 18 0 1 0 0 36 18 18 0 0 0 0-36zM13 15l9 24M21 15l10 24M31 15l-5 14'],
+  ['Email Marketing', 'Help businesses communicate with their audiences through structured email campaigns.', 'M6 12h36v26H6zM6 14l18 14 18-14'],
+  ['Content Marketing', 'Develop useful, relevant and engaging content to support brand awareness and online visibility.', 'M10 6h22l8 8v28H10zM32 6v8h8M16 24h18M16 31h18M16 38h10']
+];
+$('#serviceGrid').innerHTML = SERVICES.map(([t, d, p], i) =>
+  `<article class="card rv" style="--i:${i % 4}">${I(p)}<h3>${t}</h3><p>${d}</p><a href="#contact" data-service="${t}">Explore Service<span class="sr" hidden>: ${t}</span></a></article>`).join('');
+
+/* ---------- 11. FAQ: accessible accordion ---------- */
+const FAQ = [
+  ['What services does Digital Vishu Agency offer?', 'SEO, Google Ads, Meta Ads, social media marketing, website development, WordPress development, email marketing and content marketing.'],
+  ['How can I start a project?', 'Use the Get a Quote button to share your business, goals and what you need. We will review it and discuss the best next steps with you.'],
+  ['How much do digital marketing services cost?', 'It depends on your goals, the services needed and the scope of work. Share your requirements and you will receive a quote based on them.'],
+  ['How long does SEO take to show results?', 'SEO is gradual and depends on your website, competition and content. It usually takes several months, and no ranking or result can be guaranteed.'],
+  ['Do you develop business websites?', 'Yes. We build modern, responsive websites for businesses and personal brands, including WordPress websites.'],
+  ['Can I hire you for a single service?', 'Yes. You can hire Digital Vishu Agency for one service, such as SEO or a website, or combine several.'],
+  ['How can I contact Digital Vishu Agency?', 'Use the Get a Quote or Contact Us buttons on this page. We are based in Kotdwar, Uttarakhand, India.']
+];
+$('#faq').innerHTML = FAQ.map(([q, a], i) =>
+  `<div class="q rv"><h3><button aria-expanded="false" aria-controls="a${i}" id="q${i}">${q}</button></h3><div class="a" id="a${i}" role="region" aria-labelledby="q${i}"><div><p>${a}</p></div></div></div>`).join('');
+$$('#faq button').forEach(b => b.addEventListener('click', () => {
+  const open = b.getAttribute('aria-expanded') === 'true';
+  $$('#faq button').forEach(x => x.setAttribute('aria-expanded', false));
+  b.setAttribute('aria-expanded', !open);
+}));
+
+/* ---------- 12. CONTACT: opens email once CONFIG.email is set ---------- */
+if (CONFIG.email) {
+  $$('[data-mail]').forEach(a => a.href = `mailto:${CONFIG.email}?subject=${encodeURIComponent(a.dataset.mail + ' - Digital Vishu Agency')}`);
+  $('#mailNote').textContent = '';
+} else {
+  $('#mailNote').textContent = 'Email address coming soon.';
+}
+
+/* ---------- 13. FOOTER: email, socials, legal links ---------- */
+if (CONFIG.email) $('#fMail').innerHTML = `<a href="mailto:${CONFIG.email}">${CONFIG.email}</a>`;
+$('#socials').innerHTML = Object.entries(CONFIG.socials).filter(([, u]) => u)
+  .map(([n, u]) => `<a href="${u}" target="_blank" rel="noopener">${n}</a>`).join('');
+$$('[data-soon]').forEach(a => {
+  const u = a.textContent.startsWith('Privacy') ? CONFIG.privacyUrl : CONFIG.termsUrl;
+  if (u) a.href = u; else a.removeAttribute('href');
+});
+
+/* ---------- SCROLL REVEAL (fade-up, staggered by --i) ---------- */
+const io = new IntersectionObserver((es, o) => es.forEach(e => {
+  if (e.isIntersecting) { e.target.classList.add('in'); o.unobserve(e.target); }
+}), { threshold: .15 });
+$$('.rv, .steps').forEach(el => io.observe(el));
+$$('.steps').forEach(s => s.classList.remove('in'));
 </script>
 </body>
 </html>
