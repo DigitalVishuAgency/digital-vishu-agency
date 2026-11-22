@@ -240,7 +240,10 @@ footer a{text-decoration:none;opacity:.85}
 footer a:hover{opacity:1;text-decoration:underline}
 footer .tagline{font-family:var(--display);font-weight:800;font-size:1.2rem;margin:.8rem 0 .5rem}
 footer p{max-width:36ch;opacity:.85}
-.socials{display:flex;gap:1rem;margin-top:.8rem;flex-wrap:wrap}
+.socials{display:flex;gap:.7rem;margin-top:1rem;flex-wrap:wrap}
+.socials a{width:44px;height:44px;border:1.5px solid rgba(255,249,240,.4);border-radius:50%;display:grid;place-items:center;opacity:1;transition:background .25s,transform .25s}
+.socials a:hover{background:var(--deep);border-color:var(--deep);transform:translateY(-3px)}
+.socials svg{width:22px;height:22px;stroke:var(--cream);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 .bottom{margin-top:3rem;padding-top:1.2rem;border-top:1px solid rgba(255,249,240,.2);display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;justify-content:space-between;font-size:.9rem}
 .bottom nav{display:flex;gap:1.2rem}
 @media(max-width:900px){.fgrid{grid-template-columns:1fr 1fr}}
@@ -277,7 +280,7 @@ footer p{max-width:36ch;opacity:.85}
  <div class="wrap nav">
   <!-- LOGO: replace the text with <img src="logo.svg" alt="Digital Vishu Agency"> (PNG/SVG both work) -->
 
-<a class="logo" href="/" aria-label="Digital Vishu Agency home" id="logo">DIGITAL VISHU</a>
+<a class="logo" href="/"><img src="/logo.png" alt="Digital Vishu Agency" width="160" height="40"></a>
 
 <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
   <span></span><span></span><span></span>
@@ -304,8 +307,8 @@ footer p{max-width:36ch;opacity:.85}
    <p class="fade" style="--d:.9s">Helping businesses build a powerful online presence through strategic digital marketing, creative websites and data-driven solutions.</p>
    <p class="who fade" style="--d:1.05s">Hi, I'm Vishal Thapa — Founder of Digital Vishu Agency, based in Kotdwar, Uttarakhand.</p>
    <div class="cta-row fade" style="--d:1.2s">
-    <a class="btn btn-fill" href="#contact">Let's Work Together</a>
-    <a class="btn btn-line" href="#portfolio">Explore Our Work</a>
+   <a class="btn btn-fill" href="/contact/">Let's Work Together</a>
+<a class="btn btn-line" href="/portfolio/">Explore Our Work</a>
    </div>
   </div>
   <div class="portrait">
@@ -397,8 +400,8 @@ footer p{max-width:36ch;opacity:.85}
    <p class="name rv" style="--i:1">Vishal Thapa</p>
    <p class="meta rv" style="--i:1">Founder &amp; Digital Marketer · Kotdwar, Uttarakhand</p>
    <p class="lead rv" style="--i:2">I'm Vishal Thapa, a digital marketer from Kotdwar, Uttarakhand. My journey into digital marketing began with curiosity about how businesses grow online. Through learning, practical projects and professional experience, I continue developing my skills in SEO, digital marketing and website development.</p>
-   <div class="cta-row rv" style="--i:3"><a class="btn btn-fill" href="#journey">More About Me</a></div>
-  </div>
+<div class="cta-row rv" style="--i:3"><a class="btn btn-fill" href="/about/">More About Me</a></div>
+</div>
  </div>
 </section>
 
@@ -442,8 +445,8 @@ footer p{max-width:36ch;opacity:.85}
   <h2 class="rv">Let's grow your business together.</h2>
   <p class="lead rv">Have an idea, a business or a project in mind? Let's discuss how the right digital strategy can help you move forward.</p>
   <div class="cta-row rv">
-   <a class="btn btn-fill" data-mail="Quote request" href="#contact">Get a Quote</a>
-   <a class="btn btn-line" data-mail="Enquiry" href="#contact">Contact Us</a>
+  <a class="btn btn-fill" href="/contact/#inquiry">Get a Quote</a>
+<a class="btn btn-line" href="/contact/">Contact Us</a>
   </div>
   <p class="lead rv" id="mailNote" style="font-size:.95rem"></p>
  </div>
@@ -457,7 +460,8 @@ footer p{max-width:36ch;opacity:.85}
    <div><a class="logo" href="#home">DIGITAL VISHU</a><p class="tagline">We Build Brands. We Drive Growth.</p><p>Creative digital solutions and strategic marketing for businesses looking to strengthen their online presence.</p></div>
    <div><h3>Quick Links</h3><ul><li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#services">Services</a></li><li><a href="#portfolio">Portfolio</a></li><li><a href="#contact">Contact</a></li></ul></div>
    <div><h3>Services</h3><ul><li><a href="#services">SEO</a></li><li><a href="#services">Google Ads</a></li><li><a href="#services">Meta Ads</a></li><li><a href="#services">Social Media Marketing</a></li><li><a href="#services">Website Development</a></li><li><a href="#services">WordPress Development</a></li></ul></div>
-   <div><h3>Contact</h3><ul><li>Kotdwar, Uttarakhand, India</li><li id="fMail"></li></ul><div class="socials" id="socials"></div></div>
+ <div><h3>Contact</h3><ul><li><a href="mailto:vishalthapa8923@gmail.com">vishalthapa8923@gmail.com</a></li><li><a href="tel:8923101603">8923101603</a></li><li><a href="https://wa.me/918923101603" target="_blank" rel="noopener">WhatsApp: +91 89231 01603</a></li><li>Kotdwar, Uttarakhand, India</li></ul><div class="socials" id="socials"></div></div>
+     
   </div>
   <div class="bottom">
    <span>Copyright © 2026 Digital Vishu Agency. All Rights Reserved.</span>
@@ -475,7 +479,7 @@ footer p{max-width:36ch;opacity:.85}
 
 /* ---------- CONFIG: edit these, nothing else needs changing ---------- */
 const CONFIG = {
-  email: "",                       // e.g. "hello@digitalvishu.website"
+email: "vishalthapa8923@gmail.com",                       // e.g. "hello@digitalvishu.website"
   socials: {                       // add full URLs; empty ones are hidden
     YouTube: "", Instagram: "", LinkedIn: ""
   },
@@ -525,8 +529,8 @@ const SERVICES = [
   ['Content Marketing', 'Develop useful, relevant and engaging content to support brand awareness and online visibility.', 'M10 6h22l8 8v28H10zM32 6v8h8M16 24h18M16 31h18M16 38h10']
 ];
 $('#serviceGrid').innerHTML = SERVICES.map(([t, d, p], i) =>
-  `<article class="card rv" style="--i:${i % 4}">${I(p)}<h3>${t}</h3><p>${d}</p><a href="#contact" data-service="${t}">Explore Service<span class="sr" hidden>: ${t}</span></a></article>`).join('');
-
+`<article class="card rv" style="--i:${i % 4}">${I(p)}<h3>${t}</h3><p>${d}</p><a href="/services/" data-service="${t}">Explore Service<span class="sr" hidden>: ${t}</span></a></article>`).join('');
+   
 /* ---------- 11. FAQ: accessible accordion ---------- */
 const FAQ = [
   ['What services does Digital Vishu Agency offer?', 'SEO, Google Ads, Meta Ads, social media marketing, website development, WordPress development, email marketing and content marketing.'],
@@ -554,9 +558,14 @@ if (CONFIG.email) {
 }
 
 /* ---------- 13. FOOTER: email, socials, legal links ---------- */
-if (CONFIG.email) $('#fMail').innerHTML = `<a href="mailto:${CONFIG.email}">${CONFIG.email}</a>`;
-$('#socials').innerHTML = Object.entries(CONFIG.socials).filter(([, u]) => u)
-  .map(([n, u]) => `<a href="${u}" target="_blank" rel="noopener">${n}</a>`).join('');
+const SOCIALS = [
+ ['YouTube', 'https://youtube.com/@vishu-paradise?si=VP6OgAkVXtBE3fhA', 'M5 12a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v0a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4zM10.5 10v4l3.5-2z'],
+ ['Instagram', 'https://www.instagram.com/vishu.paradise?gwpx=dmMxd2Z2aG1sajEy', 'M7 4h10a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3zM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM17 7h.01'],
+ ['Facebook', 'https://www.facebook.com/share/1Dy2bHnnWe/', 'M14 21v-8h3l.5-3H14V8.5C14 7.5 14.6 7 15.5 7H17.5V4.3C17 4.2 16 4 15 4c-2.5 0-4 1.5-4 4v2H8v3h3v8z'],
+ ['Snapchat', 'https://www.snapchat.com/add/iamvishu762?share_id=LlBhtMVGf5I&locale=en-IN', 'M12 3c3 0 5 2 5 5v2c0 1 1 2 2 2-1 1-2 1-3 2 0 1 1 2 2 3-2 1-3 0-4 1s-1 2-2 2-1-1-2-2-2 0-4-1c1-1 2-2 2-3-1-1-2-1-3-2 1 0 2-1 2-2V8c0-3 2-5 5-5z']
+];
+$('#socials').innerHTML = SOCIALS.map(([n, u, p]) => `<a href="${u}" target="_blank" rel="noopener" aria-label="Digital Vishu on ${n}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="${p}"/></svg></a>`).join('');
+   
 $$('[data-soon]').forEach(a => {
   const u = a.textContent.startsWith('Privacy') ? CONFIG.privacyUrl : CONFIG.termsUrl;
   if (u) a.href = u; else a.removeAttribute('href');
