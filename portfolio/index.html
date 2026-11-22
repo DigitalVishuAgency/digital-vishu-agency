@@ -315,6 +315,38 @@ footer p{max-width:36ch;opacity:.85;margin-top:.8rem}
  .rv,.fade{opacity:1;transform:none}.hero h1 .w b{transform:none}.portrait .frame{clip-path:none}.line{transform:none}
  .steps .bar,.itl .bar{transform:none!important}.track{animation:none}
 }
+   /* Portfolio portrait frame fix */
+.portrait {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  aspect-ratio: 4 / 5;
+  margin-inline: auto;
+}
+
+.portrait .frame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 200px 200px 24px 24px;
+  background: #F7D794;
+}
+
+.portrait .frame img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 768px) {
+  .portrait {
+    max-width: 320px;
+  }
+}
 </style>
 </head>
 
